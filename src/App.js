@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import "./App.css";
 import Layout from "pages/_layouts/Home";
-import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import routes from "routes";
 
