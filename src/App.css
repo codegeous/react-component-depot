@@ -36,23 +36,15 @@
         transform: rotate(360deg);
     }
 }
-
-.otp-field {
-    width: 38px;
-    margin-right: 10px;
-    padding-left: 12px;
-    height: 40px;
+.card-hover {
+    opacity: 0.95;
 }
-
-.marker {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 18px;
-    height: 18px;
-    background-color: #000;
-    border: 2px solid #fff;
-    border-radius: 100%;
-    user-select: none;
-    transform: translate(-50%, -50%);
+.card-hover:hover {
+    opacity: 1;
+}
+.card-hover:hover .card-body {
+    background-color: #dddcdc;
+}
+.card-hover:hover .card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }

@@ -4,6 +4,7 @@ import Layout from "pages/_layouts/Home";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import routes from "routes";
+import Home from "pages/Home";
 
 function App() {
     return (
@@ -20,7 +21,7 @@ function App() {
                         ))}
 
                         <Route path="/" exact>
-                            <div>Home Page</div>
+                            <Home />
                         </Route>
                     </Suspense>
                 </Switch>
