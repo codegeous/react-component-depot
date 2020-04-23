@@ -2,17 +2,17 @@ import React from "react";
 
 const ExternalInfo = ({ gitLink, youtubeLink }) => {
     return (
-        <h6>
+        <h6 className="text-center">
             <a href={youtubeLink} target="_blank" rel="noopener noreferrer">
-                <span class="badge badge-danger mr-2">
-                    Youtube Tuorials Page{" "}
-                    <i class="fas fa-external-link-alt"></i>
+                <span className="badge badge-danger mr-2 p-3">
+                    Youtube Tuorial of this demo{" "}
+                    <i className="fas fa-external-link-alt"></i>
                 </span>
             </a>
             <a href={gitLink} target="_blank" rel="noopener noreferrer">
-                <span class="badge badge-secondary mr-2">
-                    Github Component Page{" "}
-                    <i class="fas fa-external-link-alt"></i>
+                <span className="badge badge-secondary mr-2 p-3">
+                    Github Source Code{" "}
+                    <i className="fas fa-external-link-alt"></i>
                 </span>
             </a>
         </h6>

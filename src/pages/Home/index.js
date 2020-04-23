@@ -20,6 +20,7 @@ const Home = () => {
                         <a
                             href="https://www.youtube.com/channel/UCdItDI6oTgPW7l9WOJI7ItA/videos"
                             target="_blank"
+                            rel="noopener noreferrer"
                         >
                             <img
                                 src={YoutubeLogo}
@@ -39,11 +40,12 @@ const Home = () => {
                                 <a
                                     href={`https://www.youtube.com/watch?v=${video.id}`}
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     <img
                                         class="card-img-top"
                                         src={`https://img.youtube.com/vi/${video.id}/sddefault.jpg`}
-                                        alt="Card image cap"
+                                        alt="Card cap"
                                     />
                                     <div class="card-body">
                                         <h5 class="card-title">

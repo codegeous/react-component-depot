@@ -21,8 +21,8 @@ const GoogleMaps = () => {
                     youtubeLink={AppConfig.links.customGoogleMaps.tutorial}
                 />
 
-                <div class="alert alert-danger" role="alert">
-                    <h4 class="alert-heading">
+                <div className="alert alert-danger" role="alert">
+                    <h4 className="alert-heading">
                         Sorry!!! Demo will not work properly due to google's
                         billing restriction
                     </h4>

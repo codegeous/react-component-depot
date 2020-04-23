@@ -7,6 +7,11 @@ export default {
             tutorial: "",
             code:
                 "https://github.com/codegeous/react-component-depot/tree/master/src/pages/GoogleMaps/CustomStyle"
+        },
+        buttonLoaderHooks: {
+            tutorial: "",
+            code:
+                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/ButtonLoadingSpinner"
         }
     },
     youtubeVideos: [
