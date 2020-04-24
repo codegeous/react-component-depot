@@ -17,8 +17,8 @@ const GoogleMaps = () => {
 
             <div className="row w-100">
                 <ExternalInfo
-                    gitLink={AppConfig.links.customGoogleMaps.code}
-                    youtubeLink={AppConfig.links.customGoogleMaps.tutorial}
+                    code={AppConfig.links.customGoogleMaps.code}
+                    tutorial={AppConfig.links.customGoogleMaps.tutorial}
                 />
 
                 <div className="alert alert-danger" role="alert">

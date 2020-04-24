@@ -12,6 +12,11 @@ export default {
             tutorial: "",
             code:
                 "https://github.com/codegeous/react-component-depot/tree/master/src/pages/ButtonLoadingSpinner"
+        },
+        otpBox: {
+            tutorial: "",
+            code:
+                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/OTPBox"
         }
     },
     youtubeVideos: [

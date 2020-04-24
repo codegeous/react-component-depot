@@ -48,3 +48,9 @@
 .card-hover:hover .card {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
+.otp-field {
+    width: 38px;
+    margin-right: 10px;
+    padding-left: 12px;
+    height: 40px;
+}

@@ -4,6 +4,7 @@ const GoogleMaps = React.lazy(() => import("pages/GoogleMaps"));
 const ButtonLoadingSpinner = React.lazy(() =>
     import("pages/ButtonLoadingSpinner")
 );
+const OTPBox = React.lazy(() => import("pages/OTPBox"));
 
 const routes = [
     {
@@ -13,6 +14,10 @@ const routes = [
     {
         path: "/button-loader",
         component: ButtonLoadingSpinner
+    },
+    {
+        path: "/otp-box",
+        component: OTPBox
     }
 ];
 

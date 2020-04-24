@@ -56,8 +56,8 @@ const ButtonLoadingSpinner = () => {
             <Header title="Loading spinner for buttons (Hooks API)" />
 
             <ExternalInfo
-                gitLink={AppConfig.links.buttonLoaderHooks.code}
-                youtubeLink={AppConfig.links.buttonLoaderHooks.tutorial}
+                code={AppConfig.links.buttonLoaderHooks.code}
+                tutorial={AppConfig.links.buttonLoaderHooks.tutorial}
             />
 
             <div className="row w-100">

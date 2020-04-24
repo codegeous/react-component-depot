@@ -55,6 +55,9 @@ export const Navbar = () => {
                 <li className={getNavLinkClass("/button-loader")}>
                     <Link to="/button-loader">Button Loader</Link>
                 </li>
+                <li className={getNavLinkClass("/otp-box")}>
+                    <Link to="/otp-box">OTP Box</Link>
+                </li>
             </ul>
 
             <ul className="list-unstyled CTAs">
