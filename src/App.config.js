@@ -6,17 +6,17 @@ export default {
         customGoogleMaps: {
             tutorial: "",
             code:
-                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/GoogleMaps/CustomStyle"
+                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/GoogleMaps/CustomStyle/index.js"
         },
         buttonLoaderHooks: {
             tutorial: "",
             code:
-                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/ButtonLoadingSpinner"
+                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/ButtonLoadingSpinner/index.js"
         },
         otpBox: {
             tutorial: "",
             code:
-                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/OTPBox"
+                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/OTPBox/index.js"
         }
     },
     youtubeVideos: [
