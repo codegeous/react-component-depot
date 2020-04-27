@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link, NavLink, useLocation } from "react-router-dom";
+import routes from "routes";
 
 export const Navbar = () => {
     const isNavbarVisible = useSelector(state => state.layout.navbar);
@@ -30,34 +31,47 @@ export const Navbar = () => {
                     </a>
                 </p>
 
-                <li>
-                    <a
-                        href="#pageSubmenu"
-                        data-toggle="collapse"
-                        aria-expanded="false"
-                        className="dropdown-toggle"
-                    >
-                        google-map-react
-                    </a>
-                    <ul className="collapse list-unstyled" id="pageSubmenu">
-                        <li className={getNavLinkClass("/map")}>
-                            <NavLink to="/map" activeClassName="active">
-                                Basic Google Maps
-                            </NavLink>
+                {routes.map((route, index) => {
+                    //If has child, render sub list
+                    return route.child ? (
+                        <li key={index}>
+                            <a
+                                href={`#pageSubmenu${index}`}
+                                data-toggle="collapse"
+                                aria-expanded="false"
+                                className="dropdown-toggle"
+                            >
+                                {route.navbar}
+                            </a>
+                            <ul
+                                className="collapse list-unstyled"
+                                id={`pageSubmenu${index}`}
+                            >
+                                {route.child.map((child, idx) => {
+                                    return (
+                                        <li
+                                            key={idx}
+                                            className={getNavLinkClass(
+                                                child.path
+                                            )}
+                                        >
+                                            <NavLink
+                                                to={child.path}
+                                                activeClassName="active"
+                                            >
+                                                {child.name}
+                                            </NavLink>
+                                        </li>
+                                    );
+                                })}
+                            </ul>
                         </li>
-                        <li className={getNavLinkClass("/map/custom-style")}>
-                            <Link to="/map/custom-style">
-                                Custom Google Maps
-                            </Link>
+                    ) : (
+                        <li key={index} className={getNavLinkClass(route.path)}>
+                            <Link to={route.path}>{route.navbar}</Link>
                         </li>
-                    </ul>
-                </li>
-                <li className={getNavLinkClass("/button-loader")}>
-                    <Link to="/button-loader">Button Loader</Link>
-                </li>
-                <li className={getNavLinkClass("/otp-box")}>
-                    <Link to="/otp-box">OTP Box</Link>
-                </li>
+                    );
+                })}
             </ul>
 
             <ul className="list-unstyled CTAs">
