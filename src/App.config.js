@@ -17,6 +17,11 @@ export default {
             tutorial: "",
             code:
                 "https://github.com/codegeous/react-component-depot/tree/master/src/pages/OTPBox/index.js"
+        },
+        contactListCRUD: {
+            tutorial: "",
+            code:
+                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/ContactList/index.js"
         }
     },
     youtubeVideos: [
