@@ -4,14 +4,15 @@ import Layout from "pages/_layouts/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import routes from "routes";
-import Home from "pages/Home";
+import PageNotFound from "pages/PageNotFound";
+import BuiltWithReact from "pages/BuiltWithReact";
 
 function App() {
     return (
         <Router>
             <Layout>
-                <Switch>
-                    <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<div>Loading...</div>}>
+                    <Switch>
                         {routes.map(route => (
                             <Route
                                 path={route.path}
@@ -20,11 +21,18 @@ function App() {
                             />
                         ))}
 
-                        <Route path="/" exact>
-                            <Home />
+                        <Route path="/built-with-react">
+                            <BuiltWithReact />
                         </Route>
-                    </Suspense>
-                </Switch>
+
+                        <Route path="/" exact>
+                            <div>Home Page</div>
+                        </Route>
+                        <Route>
+                            <PageNotFound />
+                        </Route>
+                    </Switch>
+                </Suspense>
             </Layout>
         </Router>
     );

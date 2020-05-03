@@ -6,6 +6,7 @@ const ButtonLoadingSpinner = React.lazy(() =>
 );
 const OTPBox = React.lazy(() => import("pages/OTPBox"));
 const ContactList = React.lazy(() => import("pages/ContactList"));
+const ReactBasics = React.lazy(() => import("pages/ReactBasics"));
 
 const routes = [
     {
@@ -40,6 +41,17 @@ const routes = [
         component: ContactList,
         navbar: "Contact List App",
         child: null
+    },
+    {
+        path: "/react-basics",
+        component: ReactBasics,
+        navbar: "React Basic",
+        child: [
+            {
+                name: "Show and Hide based on State",
+                path: "/react-basics/show-hide-elements"
+            }
+        ]
     }
 ];
 
