@@ -85,6 +85,9 @@ export const Navbar = () => {
                         <i className="fab fa-github"></i> Github
                     </a>
                 </li>
+                <li>
+                    <Link to="/built-with-react">Built with react</Link>
+                </li>
             </ul>
         </nav>
     );
