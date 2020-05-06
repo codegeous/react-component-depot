@@ -6,6 +6,8 @@ import imgDoctor from "resources/images/doctor.svg";
 import imgChef from "resources/images/chef.svg";
 import imgPolice from "resources/images/policeman.svg";
 import imgEngineer from "resources/images/engineer.svg";
+import AppConfig from "App.config";
+import ExternalInfo from "components/ExternalInfo";
 
 const ShowAndHide = () => {
     const professions = ["police", "chef", "doctor", "engineer"];
@@ -14,6 +16,11 @@ const ShowAndHide = () => {
     return (
         <>
             <Header title="Show and hide elements based on state in hooks" />
+
+            <ExternalInfo
+                code={AppConfig.links.showAndHideElements.code}
+                tutorial={AppConfig.links.showAndHideElements.tutorial}
+            />
 
             <div className="row w-100">
                 <div className="col mb-3 col-12 text-center">

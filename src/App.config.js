@@ -22,6 +22,11 @@ export default {
             tutorial: "",
             code:
                 "https://github.com/codegeous/react-component-depot/tree/master/src/pages/ContactList/index.js"
+        },
+        showAndHideElements: {
+            tutorial: "",
+            code:
+                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/ReactBasics/ShowAndHide/index.js"
         }
     },
     youtubeVideos: [
