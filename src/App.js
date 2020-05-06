@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import routes from "routes";
 import PageNotFound from "pages/PageNotFound";
 import BuiltWithReact from "pages/BuiltWithReact";
+import Home from "pages/Home";
 
 function App() {
     return (
@@ -26,7 +27,7 @@ function App() {
                         </Route>
 
                         <Route path="/" exact>
-                            <div>Home Page</div>
+                            <Home />
                         </Route>
                         <Route>
                             <PageNotFound />
