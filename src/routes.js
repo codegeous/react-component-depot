@@ -7,6 +7,7 @@ const ButtonLoadingSpinner = React.lazy(() =>
 const OTPBox = React.lazy(() => import("pages/OTPBox"));
 const ContactList = React.lazy(() => import("pages/ContactList"));
 const ReactBasics = React.lazy(() => import("pages/ReactBasics"));
+const AppsLibrary = React.lazy(() => import("pages/AppsLibrary"));
 
 const routes = [
     {
@@ -50,6 +51,17 @@ const routes = [
             {
                 name: "Show and Hide based on State",
                 path: "/react-basics/show-hide-elements"
+            }
+        ]
+    },
+    {
+        path: "/apps-library",
+        component: AppsLibrary,
+        navbar: "Apps Library",
+        child: [
+            {
+                name: "Scroll Indicator",
+                path: "/apps-library/scroll-indicator"
             }
         ]
     }
