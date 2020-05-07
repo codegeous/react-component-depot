@@ -36,12 +36,12 @@ const routes = [
         navbar: "OTP Box",
         child: null
     },
-    {
+    /* {
         path: "/contact-list",
         component: ContactList,
         navbar: "Contact List App",
         child: null
-    },
+    }, */
     {
         path: "/react-basics",
         component: ReactBasics,

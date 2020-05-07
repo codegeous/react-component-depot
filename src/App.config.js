@@ -4,17 +4,17 @@ export default {
     },
     links: {
         customGoogleMaps: {
-            tutorial: "",
+            tutorial: "https://youtu.be/xUsn2nj4fy0",
             code:
                 "https://github.com/codegeous/react-component-depot/tree/master/src/pages/GoogleMaps/CustomStyle/index.js"
         },
         buttonLoaderHooks: {
-            tutorial: "",
+            tutorial: "https://youtu.be/nCEnqQABC5A",
             code:
                 "https://github.com/codegeous/react-component-depot/tree/master/src/pages/ButtonLoadingSpinner/index.js"
         },
         otpBox: {
-            tutorial: "",
+            tutorial: "https://youtu.be/qf56frPk5lA",
             code:
                 "https://github.com/codegeous/react-component-depot/tree/master/src/pages/OTPBox/index.js"
         },
@@ -24,7 +24,7 @@ export default {
                 "https://github.com/codegeous/react-component-depot/tree/master/src/pages/ContactList/index.js"
         },
         showAndHideElements: {
-            tutorial: "",
+            tutorial: "https://youtu.be/jRxoO-Zd0pQ",
             code:
                 "https://github.com/codegeous/react-component-depot/tree/master/src/pages/ReactBasics/ShowAndHide/index.js"
         }
