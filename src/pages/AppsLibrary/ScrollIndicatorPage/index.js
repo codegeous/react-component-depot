@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useRef } from "react";
 import Header from "components/Header";
 import ScrollIndicator from "components/ScrollIndicator";
 import ExternalInfo from "components/ExternalInfo";
 import AppConfig from "App.config";
+import ScrollToTop from "components/ScrollToTop";
 
 const ScrollIndicatorPage = () => {
+    const commentSection = useRef(null);
+
+    const gotoCommentSection = () =>
+        window.scrollTo({
+            top: commentSection.current.offsetTop,
+            behavior: "smooth"
+        });
+
+    const scrollToBottom = () =>
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: "smooth"
+        });
+
     return (
         <>
             <Header title="Scroll Indicator" />
@@ -15,11 +30,27 @@ const ScrollIndicatorPage = () => {
             />
 
             <ScrollIndicator />
+            <ScrollToTop />
 
             <div className="row w-100">
                 <div className="col mb-3 col-12 text-center">
                     <h2>Scroll this page to see the indicator in action</h2>
-                    <br />
+                    <div className="row my-5">
+                        <div className="col">
+                            <button
+                                className="btn btn-primary mr-3"
+                                onClick={gotoCommentSection}
+                            >
+                                Go to Comment Section
+                            </button>
+                            <button
+                                className="btn btn-primary"
+                                onClick={scrollToBottom}
+                            >
+                                Scroll to bottom
+                            </button>
+                        </div>
+                    </div>
 
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -180,6 +211,58 @@ const ScrollIndicatorPage = () => {
                         inceptos himenaeos. Nam nec ante.{" "}
                     </p>
 
+                    <h3 className="my-5" ref={commentSection}>
+                        User Comments and Reviews
+                    </h3>
+
+                    <p>
+                        Sed lacinia, urna non tincidunt mattis, tortor neque
+                        adipiscing diam, a cursus ipsum ante quis turpis. Nulla
+                        facilisi. Ut fringilla. Suspendisse potenti. Nunc
+                        feugiat mi a tellus consequat imperdiet. Vestibulum
+                        sapien. Proin quam. Etiam ultrices. Suspendisse in justo
+                        eu magna luctus suscipit. Sed lectus. Integer euismod
+                        lacus luctus magna. Quisque cursus, metus vitae pharetra
+                        auctor, sem massa mattis sem, at interdum magna augue
+                        eget diam. Vestibulum ante ipsum primis in faucibus orci
+                        luctus et ultrices posuere cubilia Curae; Morbi lacinia
+                        molestie dui.{" "}
+                    </p>
+
+                    <p>
+                        Praesent blandit dolor. Sed non quam. In vel mi sit amet
+                        augue congue elementum. Morbi in ipsum sit amet pede
+                        facilisis laoreet. Donec lacus nunc, viverra nec,
+                        blandit vel, egestas et, augue. Vestibulum tincidunt
+                        malesuada tellus. Ut ultrices ultrices enim. Curabitur
+                        sit amet mauris. Morbi in dui quis est pulvinar
+                        ullamcorper. Nulla facilisi. Integer lacinia
+                        sollicitudin massa. Cras metus.{" "}
+                    </p>
+                    <p>
+                        Sed lacinia, urna non tincidunt mattis, tortor neque
+                        adipiscing diam, a cursus ipsum ante quis turpis. Nulla
+                        facilisi. Ut fringilla. Suspendisse potenti. Nunc
+                        feugiat mi a tellus consequat imperdiet. Vestibulum
+                        sapien. Proin quam. Etiam ultrices. Suspendisse in justo
+                        eu magna luctus suscipit. Sed lectus. Integer euismod
+                        lacus luctus magna. Quisque cursus, metus vitae pharetra
+                        auctor, sem massa mattis sem, at interdum magna augue
+                        eget diam. Vestibulum ante ipsum primis in faucibus orci
+                        luctus et ultrices posuere cubilia Curae; Morbi lacinia
+                        molestie dui.{" "}
+                    </p>
+
+                    <p>
+                        Praesent blandit dolor. Sed non quam. In vel mi sit amet
+                        augue congue elementum. Morbi in ipsum sit amet pede
+                        facilisis laoreet. Donec lacus nunc, viverra nec,
+                        blandit vel, egestas et, augue. Vestibulum tincidunt
+                        malesuada tellus. Ut ultrices ultrices enim. Curabitur
+                        sit amet mauris. Morbi in dui quis est pulvinar
+                        ullamcorper. Nulla facilisi. Integer lacinia
+                        sollicitudin massa. Cras metus.{" "}
+                    </p>
                     <p>
                         Sed lacinia, urna non tincidunt mattis, tortor neque
                         adipiscing diam, a cursus ipsum ante quis turpis. Nulla
