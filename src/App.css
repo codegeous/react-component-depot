@@ -93,3 +93,30 @@
         transform: translateY(-1px);
     }
 }
+
+.custom-youtube-player {
+    position: fixed;
+    width: 450px;
+    height: 300px;
+    bottom: 40px;
+    right: 40px;
+    background: #000;
+}
+.custom-youtube-player .close,
+.custom-youtube-player .handle {
+    position: absolute;
+    right: 0px;
+    top: -30px;
+    width: 32px;
+    height: 32px;
+    background: #000;
+    color: #fff;
+    opacity: 1;
+    padding: 3px;
+    cursor: pointer;
+}
+.custom-youtube-player .handle {
+    right: 32px;
+    padding-top: 8px;
+    cursor: move;
+}
