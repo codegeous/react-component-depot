@@ -29,7 +29,7 @@ export default {
                 "https://github.com/codegeous/react-component-depot/tree/master/src/pages/ReactBasics/ShowAndHide/index.js"
         },
         scrollIndicator: {
-            tutorial: "",
+            tutorial: "https://youtu.be/-rYmnXV6sYw",
             code:
                 "https://github.com/codegeous/react-component-depot/tree/master/src/components/ScrollIndicator/index.js"
         },

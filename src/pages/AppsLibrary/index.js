@@ -7,10 +7,7 @@ const AppsLibrary = () => {
     let { path } = useRouteMatch();
     return (
         <Switch>
-            <Route
-                path={`${path}/scroll-indicator`}
-                component={ScrollIndicatorPage}
-            />
+            <Route component={ScrollIndicatorPage} />
         </Switch>
     );
 };

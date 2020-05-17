@@ -44,10 +44,16 @@ const routes = [
         navbar: "Contact List App",
         child: null
     }, */
-    {
+    /* {
         path: "/video-players",
         component: VideoPlayers,
         navbar: "Video Players",
+        child: null
+    },*/
+    {
+        path: "/apps-library/scroll-indicator",
+        component: AppsLibrary,
+        navbar: "Scroll Indicator",
         child: null
     },
     {
@@ -58,17 +64,6 @@ const routes = [
             {
                 name: "Show and Hide based on State",
                 path: "/react-basics/show-hide-elements"
-            }
-        ]
-    },
-    {
-        path: "/apps-library",
-        component: AppsLibrary,
-        navbar: "Apps Library",
-        child: [
-            {
-                name: "Scroll Indicator",
-                path: "/apps-library/scroll-indicator"
             }
         ]
     }
