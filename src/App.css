@@ -57,3 +57,66 @@
 .cursor-pointer {
     cursor: pointer;
 }
+
+.scroll-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+}
+.scroll-container .indicator {
+    height: 100%;
+    background: #8b0000;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 12px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: #8b0000;
+    color: #fff;
+    z-index: 1;
+}
+.scroll-to-top .icon {
+    margin-top: 10px;
+    animation: scrollTop 0.5s alternate ease infinite;
+}
+@keyframes scrollTop {
+    from {
+        transform: translateY(2px);
+    }
+    to {
+        transform: translateY(-1px);
+    }
+}
+
+.custom-youtube-player {
+    position: fixed;
+    width: 450px;
+    height: 300px;
+    bottom: 40px;
+    right: 40px;
+    background: #000;
+}
+.custom-youtube-player .close,
+.custom-youtube-player .handle {
+    position: absolute;
+    right: 0px;
+    top: -30px;
+    width: 32px;
+    height: 32px;
+    background: #000;
+    color: #fff;
+    opacity: 1;
+    padding: 3px;
+    cursor: pointer;
+}
+.custom-youtube-player .handle {
+    right: 32px;
+    padding-top: 8px;
+    cursor: move;
+}

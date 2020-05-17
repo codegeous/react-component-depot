@@ -7,6 +7,8 @@ const ButtonLoadingSpinner = React.lazy(() =>
 const OTPBox = React.lazy(() => import("pages/OTPBox"));
 const ContactList = React.lazy(() => import("pages/ContactList"));
 const ReactBasics = React.lazy(() => import("pages/ReactBasics"));
+const AppsLibrary = React.lazy(() => import("pages/AppsLibrary"));
+const VideoPlayers = React.lazy(() => import("pages/VideoPlayers"));
 
 const routes = [
     {
@@ -42,6 +44,18 @@ const routes = [
         navbar: "Contact List App",
         child: null
     }, */
+    /* {
+        path: "/video-players",
+        component: VideoPlayers,
+        navbar: "Video Players",
+        child: null
+    },*/
+    {
+        path: "/apps-library/scroll-indicator",
+        component: AppsLibrary,
+        navbar: "Scroll Indicator",
+        child: null
+    },
     {
         path: "/react-basics",
         component: ReactBasics,

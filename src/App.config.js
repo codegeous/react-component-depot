@@ -27,6 +27,16 @@ export default {
             tutorial: "https://youtu.be/jRxoO-Zd0pQ",
             code:
                 "https://github.com/codegeous/react-component-depot/tree/master/src/pages/ReactBasics/ShowAndHide/index.js"
+        },
+        scrollIndicator: {
+            tutorial: "https://youtu.be/-rYmnXV6sYw",
+            code:
+                "https://github.com/codegeous/react-component-depot/tree/master/src/components/ScrollIndicator/index.js"
+        },
+        floatingYoutubePlayer: {
+            tutorial: "",
+            code:
+                "https://github.com/codegeous/react-component-depot/tree/master/src/components/YoutubePlayer/index.js"
         }
     },
     youtubeVideos: [
