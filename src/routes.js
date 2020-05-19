@@ -29,7 +29,7 @@ const routes = [
     {
         path: "/button-loader",
         component: ButtonLoadingSpinner,
-        navbar: "Button Loader",
+        navbar: "Loading Spinners",
         child: null
     },
     {
@@ -44,12 +44,12 @@ const routes = [
         navbar: "Contact List App",
         child: null
     }, */
-    /* {
+    {
         path: "/video-players",
         component: VideoPlayers,
         navbar: "Video Players",
         child: null
-    },*/
+    },
     {
         path: "/apps-library/scroll-indicator",
         component: AppsLibrary,
