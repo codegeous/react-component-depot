@@ -3,6 +3,7 @@ import Header from "components/Header";
 import useButtonLoader from "hooks/useButtonLoader";
 import ExternalInfo from "components/ExternalInfo";
 import AppConfig from "App.config";
+import useFullPageLoader from "hooks/useFullPageLoader";
 
 const ButtonLoadingSpinner = () => {
     //Method 1
@@ -17,6 +18,8 @@ const ButtonLoadingSpinner = () => {
         "Subscribe 3",
         "Subscribing 3..."
     );
+
+    const [loader, showLoader, hideLoader] = useFullPageLoader();
 
     const subscribe = () => {
         setLoading(true);
@@ -51,22 +54,33 @@ const ButtonLoadingSpinner = () => {
             });
     };
 
+    const fetchData = () => {
+        showLoader();
+
+        fetch("https://jsonplaceholder.typicode.com/todos/1")
+            .then(response => response.json())
+            .then(json => {
+                hideLoader();
+                console.log(json);
+            });
+    };
+
     return (
         <>
-            <Header title="Loading spinner for buttons (Hooks API)" />
-
-            <ExternalInfo
-                code={AppConfig.links.buttonLoaderHooks.code}
-                tutorial={AppConfig.links.buttonLoaderHooks.tutorial}
-            />
+            <Header title="Loading spinners (Hooks API)" />
 
             <div className="row w-100">
                 <div className="col text-center">
-                    <h2>Welcome to the channel!!!</h2>
+                    <h2>Button Loading spinners</h2>
+                    <ExternalInfo
+                        code={AppConfig.links.buttonLoaderHooks.code}
+                        tutorial={AppConfig.links.buttonLoaderHooks.tutorial}
+                    />
                     <p>
                         Click the subscribe button below to see the loading
                         effect
                     </p>
+
                     <p>
                         {!isLoading && (
                             <button
@@ -102,6 +116,26 @@ const ButtonLoadingSpinner = () => {
                     </p>
                 </div>
             </div>
+            <hr />
+            <div className="row w-100 mt-5">
+                <div className="col text-center">
+                    <h2>Full Page Loading Spinners</h2>
+                    <p>
+                        Click the subscribe button below to see the full page
+                        loader in action
+                    </p>
+
+                    <p>
+                        <button
+                            className="btn btn-primary mr-2"
+                            onClick={fetchData}
+                        >
+                            Show full page loading spinner
+                        </button>
+                    </p>
+                </div>
+            </div>
+            {loader}
         </>
     );
 };
