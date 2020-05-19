@@ -34,7 +34,7 @@ export default {
                 "https://github.com/codegeous/react-component-depot/tree/master/src/components/ScrollIndicator/index.js"
         },
         floatingYoutubePlayer: {
-            tutorial: "",
+            tutorial: "https://youtu.be/lT4uJI6TXAg",
             code:
                 "https://github.com/codegeous/react-component-depot/tree/master/src/components/YoutubePlayer/index.js"
         }

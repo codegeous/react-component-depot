@@ -9,6 +9,7 @@ const ContactList = React.lazy(() => import("pages/ContactList"));
 const ReactBasics = React.lazy(() => import("pages/ReactBasics"));
 const AppsLibrary = React.lazy(() => import("pages/AppsLibrary"));
 const VideoPlayers = React.lazy(() => import("pages/VideoPlayers"));
+const DataTable = React.lazy(() => import("pages/DataTable"));
 
 const routes = [
     {
@@ -56,6 +57,12 @@ const routes = [
         navbar: "Scroll Indicator",
         child: null
     },
+    /* {
+        path: "/data-table",
+        component: DataTable,
+        navbar: "Data Table",
+        child: null
+    }, */
     {
         path: "/react-basics",
         component: ReactBasics,
