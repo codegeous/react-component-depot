@@ -10,6 +10,7 @@ const ReactBasics = React.lazy(() => import("pages/ReactBasics"));
 const AppsLibrary = React.lazy(() => import("pages/AppsLibrary"));
 const VideoPlayers = React.lazy(() => import("pages/VideoPlayers"));
 const DataTable = React.lazy(() => import("pages/DataTable"));
+const Signup = React.lazy(() => import("pages/Signup"));
 
 const routes = [
     {
@@ -55,6 +56,12 @@ const routes = [
         path: "/apps-library/scroll-indicator",
         component: AppsLibrary,
         navbar: "Scroll Indicator",
+        child: null
+    },
+    {
+        path: "/signup",
+        component: Signup,
+        navbar: "Signup Form",
         child: null
     },
     /* {
