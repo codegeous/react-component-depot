@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = ({ headers, onSorting }) => {
     const [sortingField, setSortingField] = useState("");
@@ -42,16 +43,11 @@ const HeaderItem = ({ name, field, isSortable, onSort, sorting }) => {
             }}
         >
             {name}
-            {sorting === "asc" && (
-                <span>
-                    <i className="fas fa-arrow-down"></i>
-                </span>
-            )}
-            {sorting === "desc" && (
-                <span>
-                    <i className="fas fa-arrow-up"></i>
-                </span>
-            )}
+            <span>
+                <FontAwesomeIcon
+                    icon={sorting === "asc" ? "arrow-up" : "arrow-down"}
+                />
+            </span>
         </th>
     );
 };
