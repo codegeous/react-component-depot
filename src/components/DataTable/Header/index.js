@@ -1,54 +1,44 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = ({ headers, onSorting }) => {
     const [sortingField, setSortingField] = useState("");
     const [sortingOrder, setSortingOrder] = useState("asc");
 
-    useEffect(() => {
-        onSorting(sortingField, sortingOrder);
-    }, [sortingField, sortingOrder]);
+    const onSortingChange = field => {
+        const order =
+            field === sortingField && sortingOrder === "asc" ? "desc" : "asc";
 
-    const onSortChange = field => {
         setSortingField(field);
-        setSortingOrder(order =>
-            field === sortingField && order === "asc" ? "desc" : "asc"
-        );
+        setSortingOrder(order);
+        onSorting(field, order);
     };
 
     return (
         <thead>
             <tr>
-                {headers.map(head => (
-                    <HeaderItem
-                        {...head}
-                        key={head.field}
-                        onSort={onSortChange}
-                        sorting={
-                            sortingField === head.field ? sortingOrder : null
+                {headers.map(({ name, field, sortable }) => (
+                    <th
+                        key={name}
+                        onClick={() =>
+                            sortable ? onSortingChange(field) : null
                         }
-                    />
+                    >
+                        {name}
+
+                        {sortingField && sortingField === field && (
+                            <FontAwesomeIcon
+                                icon={
+                                    sortingOrder === "asc"
+                                        ? "arrow-down"
+                                        : "arrow-up"
+                                }
+                            />
+                        )}
+                    </th>
                 ))}
             </tr>
         </thead>
-    );
-};
-
-const HeaderItem = ({ name, field, isSortable, onSort, sorting }) => {
-    return (
-        <th
-            key={field}
-            onClick={() => {
-                return isSortable ? onSort(field) : null;
-            }}
-        >
-            {name}
-            <span>
-                <FontAwesomeIcon
-                    icon={sorting === "asc" ? "arrow-up" : "arrow-down"}
-                />
-            </span>
-        </th>
     );
 };
 

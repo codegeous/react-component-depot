@@ -14,10 +14,10 @@ const DataTable = () => {
     const ITEMS_PER_PAGE = 50;
 
     const headers = [
-        { name: "No#", field: "id", isSortable: false },
-        { name: "Name", field: "name", isSortable: true },
-        { name: "Email", field: "email", isSortable: true },
-        { name: "Comment", field: "body", isSortable: false }
+        { name: "No#", field: "id", sortable: false },
+        { name: "Name", field: "name", sortable: true },
+        { name: "Email", field: "email", sortable: true },
+        { name: "Comment", field: "body", sortable: false }
     ];
 
     useEffect(() => {
@@ -52,11 +52,10 @@ const DataTable = () => {
         //Sorting comments
         if (sorting.field) {
             const reversed = sorting.order === "asc" ? 1 : -1;
-            computedComments = computedComments.sort((a, b) => {
-                return (
+            computedComments = computedComments.sort(
+                (a, b) =>
                     reversed * a[sorting.field].localeCompare(b[sorting.field])
-                );
-            });
+            );
         }
 
         //Current Page slice
@@ -65,16 +64,6 @@ const DataTable = () => {
             (currentPage - 1) * ITEMS_PER_PAGE + ITEMS_PER_PAGE
         );
     }, [comments, currentPage, search, sorting]);
-
-    const onSorting = (field, order) => {
-        setSorting(sort => {
-            return {
-                ...sort,
-                field,
-                order
-            };
-        });
-    };
 
     return (
         <>
@@ -102,7 +91,12 @@ const DataTable = () => {
                     </div>
 
                     <table className="table table-striped">
-                        <TableHeader headers={headers} onSorting={onSorting} />
+                        <TableHeader
+                            headers={headers}
+                            onSorting={(field, order) =>
+                                setSorting({ field, order })
+                            }
+                        />
                         <tbody>
                             {commentsData.map(comment => (
                                 <tr>
