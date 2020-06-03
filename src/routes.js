@@ -11,6 +11,7 @@ const AppsLibrary = React.lazy(() => import("pages/AppsLibrary"));
 const VideoPlayers = React.lazy(() => import("pages/VideoPlayers"));
 const DataTable = React.lazy(() => import("pages/DataTable"));
 const Signup = React.lazy(() => import("pages/Signup"));
+const HooksDemo = React.lazy(() => import("pages/HooksDemo"));
 
 const routes = [
     {
@@ -62,6 +63,12 @@ const routes = [
         path: "/signup",
         component: Signup,
         navbar: "Signup Form",
+        child: null
+    },
+    {
+        path: "/hooks-demo",
+        component: HooksDemo,
+        navbar: "Hooks demo",
         child: null
     },
     /* {

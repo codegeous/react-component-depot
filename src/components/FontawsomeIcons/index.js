@@ -4,7 +4,21 @@ import {
     faEnvelope,
     faLock,
     faEye,
-    faEyeSlash
+    faEyeSlash,
+    faArrowUp,
+    faArrowDown,
+    faExpand,
+    faCompress
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faUser, faEnvelope, faLock, faEye, faEyeSlash);
+library.add(
+    faUser,
+    faEnvelope,
+    faLock,
+    faEye,
+    faEyeSlash,
+    faArrowUp,
+    faArrowDown,
+    faExpand,
+    faCompress
+);

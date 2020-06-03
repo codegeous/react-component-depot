@@ -37,6 +37,11 @@ export default {
             tutorial: "https://youtu.be/lT4uJI6TXAg",
             code:
                 "https://github.com/codegeous/react-component-depot/tree/master/src/components/YoutubePlayer/index.js"
+        },
+        signup: {
+            tutorial: "",
+            code:
+                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/Signup/index.js"
         }
     },
     youtubeVideos: [
