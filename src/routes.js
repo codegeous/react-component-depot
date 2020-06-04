@@ -71,12 +71,12 @@ const routes = [
         navbar: "Hooks demo",
         child: null
     },
-    /* {
+    {
         path: "/data-table",
         component: DataTable,
         navbar: "Data Table",
         child: null
-    }, */
+    },
     {
         path: "/react-basics",
         component: ReactBasics,
