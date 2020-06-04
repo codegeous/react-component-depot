@@ -2,6 +2,8 @@ import React, { useEffect, useState, useMemo } from "react";
 import Header from "components/Header";
 import { TableHeader, Pagination, Search } from "components/DataTable";
 import useFullPageLoader from "hooks/useFullPageLoader";
+import ExternalInfo from "components/ExternalInfo";
+import AppConfig from "App.config";
 
 const DataTable = () => {
     const [comments, setComments] = useState([]);
@@ -69,6 +71,11 @@ const DataTable = () => {
         <>
             <Header title="Building a data table in react" />
 
+            <ExternalInfo
+                code={AppConfig.links.datatable.code}
+                tutorial={AppConfig.links.datatable.tutorial}
+            />
+
             <div className="row w-100">
                 <div className="col mb-3 col-12 text-center">
                     <div className="row">
@@ -100,7 +107,9 @@ const DataTable = () => {
                         <tbody>
                             {commentsData.map(comment => (
                                 <tr>
-                                    <th scope="row">{comment.id}</th>
+                                    <th scope="row" key={comment.id}>
+                                        {comment.id}
+                                    </th>
                                     <td>{comment.name}</td>
                                     <td>{comment.email}</td>
                                     <td>{comment.body}</td>

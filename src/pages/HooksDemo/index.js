@@ -3,6 +3,8 @@ import Header from "components/Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useUnsavedChangesWarning from "hooks/useUnsavedChangesWarning";
 import useFullscreenMode from "hooks/useFullscreenMode";
+import AppConfig from "App.config";
+import ExternalInfo from "components/ExternalInfo";
 
 const HooksDemo = () => {
     const [name, setName] = useState("");
@@ -12,6 +14,12 @@ const HooksDemo = () => {
     return (
         <>
             <Header title="Hooks demo" />
+
+            <ExternalInfo
+                code={AppConfig.links.hooks.code}
+                tutorial={AppConfig.links.hooks.tutorial}
+            />
+
             <div
                 className="row justify-content-center mt-5 bg-light"
                 ref={elementRef}

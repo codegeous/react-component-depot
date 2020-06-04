@@ -42,6 +42,16 @@ export default {
             tutorial: "",
             code:
                 "https://github.com/codegeous/react-component-depot/tree/master/src/pages/Signup/index.js"
+        },
+        hooks: {
+            tutorial: "https://youtu.be/fT7jBMG7GIM",
+            code:
+                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/HooksDemo/index.js"
+        },
+        datatable: {
+            tutorial: "https://youtu.be/emX5KvZ6Hbo",
+            code:
+                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/DataTable/index.js"
         }
     },
     youtubeVideos: [
