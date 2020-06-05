@@ -12,6 +12,7 @@ const VideoPlayers = React.lazy(() => import("pages/VideoPlayers"));
 const DataTable = React.lazy(() => import("pages/DataTable"));
 const Signup = React.lazy(() => import("pages/Signup"));
 const HooksDemo = React.lazy(() => import("pages/HooksDemo"));
+const FileUpload = React.lazy(() => import("pages/FileUpload"));
 
 const routes = [
     {
@@ -75,6 +76,12 @@ const routes = [
         path: "/data-table",
         component: DataTable,
         navbar: "Data Table",
+        child: null
+    },
+    {
+        path: "/file-upload",
+        component: FileUpload,
+        navbar: "File Upload",
         child: null
     },
     {
