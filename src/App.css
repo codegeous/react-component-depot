@@ -120,7 +120,7 @@
     padding-top: 8px;
     cursor: move;
 }
-.fp-container{
+.fp-container {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -128,9 +128,55 @@
     left: 0;
     background: #f8f8f8ad;
 }
-.fp-container .fp-loader{
+.fp-container .fp-loader {
     top: 30%;
     left: 48%;
     z-index: 1000;
     position: absolute;
+}
+
+.battery-outer {
+    height: 210px;
+    width: 100px;
+    border: 2px solid #222;
+    padding: 4px;
+    border-radius: 7px;
+}
+.battery-inner {
+    width: 100%;
+    margin: 2px 0;
+    background-color: #01770a;
+}
+.battery-empty .battery-inner {
+    background: #8b0000;
+}
+.battery-outer::before {
+    content: "";
+    width: 24px;
+    position: absolute;
+    top: -8px;
+    height: 8px;
+    background: #222;
+    left: 49%;
+    border-radius: 4px 4px 3px 3px;
+}
+.battery-outer .battery-charging-indicator {
+    position: absolute;
+    top: 40%;
+    left: 49.2%;
+    color: #cbd71d;
+    font-size: 40px;
+    display: none;
+}
+.battery-charging .battery-outer .battery-charging-indicator {
+    display: block;
+    animation: fadeIn 0.8s infinite alternate;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
