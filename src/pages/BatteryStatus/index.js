@@ -3,6 +3,7 @@ import Header from "components/Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useBattery } from "react-use";
 import AppConfig from "App.config";
+import ExternalInfo from "components/ExternalInfo";
 
 const BatteryStatus = () => {
     const [batteryStrokes, setBatteryStrokes] = useState(Array(5).fill(true));
