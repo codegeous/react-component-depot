@@ -52,6 +52,11 @@ export default {
             tutorial: "https://youtu.be/emX5KvZ6Hbo",
             code:
                 "https://github.com/codegeous/react-component-depot/tree/master/src/pages/DataTable/index.js"
+        },
+        batteryStatus: {
+            tutorial: "",
+            code:
+                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/BatteryStatus/index.js"
         }
     },
     youtubeVideos: [

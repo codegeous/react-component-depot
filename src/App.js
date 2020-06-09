@@ -9,6 +9,7 @@ import routes from "routes";
 import PageNotFound from "pages/PageNotFound";
 import BuiltWithReact from "pages/BuiltWithReact";
 import Home from "pages/Home";
+const GeoLocation = React.lazy(() => import("pages/GeoLocation"));
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                                 key={route.path}
                             />
                         ))}
+                        <Route path={"/find-my-ip"} component={GeoLocation} />
 
                         <Route path="/built-with-react">
                             <BuiltWithReact />
