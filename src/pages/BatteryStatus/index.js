@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "components/Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useBattery } from "react-use";
+import AppConfig from "App.config";
 
 const BatteryStatus = () => {
     const [batteryStrokes, setBatteryStrokes] = useState(Array(5).fill(true));
@@ -78,6 +79,11 @@ const BatteryStatus = () => {
     return (
         <>
             <Header title="Battery Status Indicator" />
+
+            <ExternalInfo
+                code={AppConfig.links.batteryStatus.code}
+                tutorial={AppConfig.links.batteryStatus.tutorial}
+            />
 
             <div className="row justify-content-center bg-light">
                 <div className="col-lg-12 text-center">
