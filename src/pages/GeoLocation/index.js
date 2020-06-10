@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Header from "components/Header";
+import ExternalInfo from "components/ExternalInfo";
+import AppConfig from "App.config";
 
 const GeoLocation = () => {
     const [details, setDetails] = useState(null);
@@ -15,6 +17,12 @@ const GeoLocation = () => {
     return (
         <>
             <Header title="Get user IP and location in ReactJS" />
+
+            <ExternalInfo
+                code={AppConfig.links.geoLocation.code}
+                tutorial={AppConfig.links.geoLocation.tutorial}
+            />
+
             <div className="row">
                 <div className="col text-center">
                     <h2>Find my IP and Location</h2>
