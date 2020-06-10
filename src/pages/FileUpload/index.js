@@ -2,6 +2,8 @@ import React, { useState, useRef } from "react";
 import Header from "components/Header";
 import axios, { CancelToken, isCancel } from "axios";
 import { ProgressBar } from "react-bootstrap";
+import ExternalInfo from "components/ExternalInfo";
+import AppConfig from "App.config";
 
 const FileUpload = () => {
     const [uploadPercentage, setUploadPercentage] = useState(0);
@@ -58,6 +60,12 @@ const FileUpload = () => {
     return (
         <>
             <Header title="File upload in ReactJS" />
+
+            <ExternalInfo
+                code={AppConfig.links.fileupload.code}
+                tutorial={AppConfig.links.fileupload.tutorial}
+            />
+
             <div className="row justify-content-center bg-light">
                 <div className="col-md-6 text-center">
                     <h2>Upload your profile picture</h2>

@@ -54,9 +54,19 @@ export default {
                 "https://github.com/codegeous/react-component-depot/tree/master/src/pages/DataTable/index.js"
         },
         batteryStatus: {
-            tutorial: "",
+            tutorial: "https://youtu.be/50cOgnVmflE",
             code:
                 "https://github.com/codegeous/react-component-depot/tree/master/src/pages/BatteryStatus/index.js"
+        },
+        fileupload: {
+            tutorial: "https://youtu.be/TID8Z29je5o",
+            code:
+                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/FileUpload/index.js"
+        },
+        geoLocation: {
+            tutorial: "https://youtu.be/TID8Z29je5o",
+            code:
+                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/GeoLocation/index.js"
         }
     },
     youtubeVideos: [
