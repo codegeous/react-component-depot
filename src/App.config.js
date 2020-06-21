@@ -1,7 +1,11 @@
 export default {
     GOOGLE: {
-        GAPI_KEY: "AIzaSyAV017iIIEjI8fow5IsIQdJY40w4UQdcec"
+        GAPI_KEY: "",
+        reCaptcha: "6LcVLqUZAAAAAKIEDQXRDxZ3TAbpOkK1FHZKLwxz"
     },
+
+    hCaptchaSiteToken: "dfc3457f-7688-4e53-9269-961c77e14c6d",
+
     links: {
         customGoogleMaps: {
             tutorial: "https://youtu.be/xUsn2nj4fy0",

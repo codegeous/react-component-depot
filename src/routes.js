@@ -14,6 +14,9 @@ const Signup = React.lazy(() => import("pages/Signup"));
 const HooksDemo = React.lazy(() => import("pages/HooksDemo"));
 const FileUpload = React.lazy(() => import("pages/FileUpload"));
 const BatteryStatus = React.lazy(() => import("pages/BatteryStatus"));
+const InfiniteScrolling = React.lazy(() => import("pages/InfiniteScrolling"));
+const Hcaptcha = React.lazy(() => import("pages/HCaptcha"));
+const ReCaptcha = React.lazy(() => import("pages/ReCaptcha"));
 
 const routes = [
     {
@@ -89,6 +92,24 @@ const routes = [
         path: "/battery-status",
         component: BatteryStatus,
         navbar: "Battery Status",
+        child: null
+    },
+    {
+        path: "/infinite-scrolling",
+        component: InfiniteScrolling,
+        navbar: "Infinite Scrolling",
+        child: null
+    },
+    {
+        path: "/hcaptcha",
+        component: Hcaptcha,
+        navbar: "HCaptcha",
+        child: null
+    },
+    {
+        path: "/recaptcha",
+        component: ReCaptcha,
+        navbar: "ReCaptcha",
         child: null
     },
     {
