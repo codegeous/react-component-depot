@@ -100,7 +100,7 @@ const routes = [
         navbar: "Infinite Scrolling",
         child: null
     },
-    {
+    /* {
         path: "/hcaptcha",
         component: Hcaptcha,
         navbar: "HCaptcha",
@@ -111,7 +111,7 @@ const routes = [
         component: ReCaptcha,
         navbar: "ReCaptcha",
         child: null
-    },
+    }, */
     {
         path: "/react-basics",
         component: ReactBasics,
