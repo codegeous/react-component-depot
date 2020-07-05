@@ -3,6 +3,8 @@ import axios from "axios";
 import Header from "components/Header";
 import { Waypoint } from "react-waypoint";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ExternalInfo from "components/ExternalInfo";
+import AppConfig from "App.config";
 
 const InfiniteScrolling = () => {
     const [users, setUsers] = useState([]);
@@ -39,6 +41,12 @@ const InfiniteScrolling = () => {
     return (
         <>
             <Header title="Infinite Scrolling Pagination" />
+
+            <ExternalInfo
+                code={AppConfig.links.infniteScrolling.code}
+                tutorial={AppConfig.links.infniteScrolling.tutorial}
+            />
+
             <div className="row">
                 <div className="col text-center">
                     <h2>Infinite Scrolling Loader!!!</h2>
