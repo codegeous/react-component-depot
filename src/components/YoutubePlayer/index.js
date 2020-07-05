@@ -21,7 +21,7 @@ const YoutubePlayer = () => {
                         id="player"
                         type="text/html"
                         style={{ width: "100%", height: "100%" }}
-                        src={`http://www.youtube.com/embed/${videoPlayer.video}`}
+                        src={`https://www.youtube.com/embed/${videoPlayer.video}`}
                         frameborder="0"
                     ></iframe>
 

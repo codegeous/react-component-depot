@@ -63,7 +63,7 @@ export default {
                 "https://github.com/codegeous/react-component-depot/tree/master/src/pages/BatteryStatus/index.js"
         },
         fileupload: {
-            tutorial: "https://youtu.be/TID8Z29je5o",
+            tutorial: "https://youtu.be/_XD5ko7Fy9E",
             code:
                 "https://github.com/codegeous/react-component-depot/tree/master/src/pages/FileUpload/index.js"
         },
@@ -71,6 +71,11 @@ export default {
             tutorial: "https://youtu.be/TID8Z29je5o",
             code:
                 "https://github.com/codegeous/react-component-depot/tree/master/src/pages/GeoLocation/index.js"
+        },
+        infniteScrolling: {
+            tutorial: "https://youtu.be/8nFNxnjoTZ4",
+            code:
+                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/InfiniteScrolling/index.js"
         }
     },
     youtubeVideos: [
