@@ -20,6 +20,7 @@ const ReCaptcha = React.lazy(() => import("pages/ReCaptcha"));
 
 const routes = [
     {
+        enabled: true,
         path: "/map",
         component: GoogleMaps,
         navbar: "google-map-react",
@@ -35,84 +36,98 @@ const routes = [
         ]
     },
     {
+        enabled: true,
         path: "/button-loader",
         component: ButtonLoadingSpinner,
         navbar: "Loading Spinners",
         child: null
     },
     {
+        enabled: true,
         path: "/otp-box",
         component: OTPBox,
         navbar: "OTP Box",
         child: null
     },
-    /* {
+    {
+        enabled: false,
         path: "/contact-list",
         component: ContactList,
         navbar: "Contact List App",
         child: null
-    }, */
+    },
     {
+        enabled: true,
         path: "/video-players",
         component: VideoPlayers,
         navbar: "Video Players",
         child: null
     },
     {
+        enabled: true,
         path: "/apps-library/scroll-indicator",
         component: AppsLibrary,
         navbar: "Scroll Indicator",
         child: null
     },
     {
+        enabled: true,
         path: "/signup",
         component: Signup,
         navbar: "Signup Form",
         child: null
     },
     {
+        enabled: true,
         path: "/hooks-demo",
         component: HooksDemo,
         navbar: "Hooks demo",
         child: null
     },
     {
+        enabled: true,
         path: "/data-table",
         component: DataTable,
         navbar: "Data Table",
         child: null
     },
     {
+        enabled: true,
         path: "/file-upload",
         component: FileUpload,
         navbar: "File Upload",
         child: null
     },
     {
+        enabled: true,
         path: "/battery-status",
         component: BatteryStatus,
         navbar: "Battery Status",
         child: null
     },
     {
+        enabled: true,
         path: "/infinite-scrolling",
         component: InfiniteScrolling,
         navbar: "Infinite Scrolling",
         child: null
     },
     {
+        enabled: true,
         path: "/hcaptcha",
         component: Hcaptcha,
         navbar: "HCaptcha",
         child: null
     },
-    /* {
+    {
+        enabled: true,
         path: "/recaptcha",
         component: ReCaptcha,
         navbar: "ReCaptcha",
         child: null
-    }, */
+    },
     {
+        enabled: true,
         path: "/react-basics",
         component: ReactBasics,
         navbar: "React Basic",
@@ -125,4 +140,4 @@ const routes = [
     }
 ];
 
-export default routes;
+export default routes.filter(route => route.enabled);
