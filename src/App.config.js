@@ -1,10 +1,12 @@
 export default {
+    api: process.env.REACT_APP_API_ENDPOINT,
+
     GOOGLE: {
         GAPI_KEY: "",
-        reCaptcha: "6LcVLqUZAAAAAKIEDQXRDxZ3TAbpOkK1FHZKLwxz"
+        reCaptcha: process.env.REACT_APP_RECAPCTHA_SITE_TOKEN
     },
 
-    hCaptchaSiteToken: "31ae272b-3a28-4770-8f74-5a8081884827",
+    hCaptchaSiteToken: process.env.REACT_APP_HCAPTCHA_SITE_TOKEN,
 
     links: {
         customGoogleMaps: {

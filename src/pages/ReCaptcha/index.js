@@ -27,7 +27,7 @@ const ReCaptchaSignup = () => {
         setError("");
         setLoading(true);
 
-        Axios.post("http://localhost:8080/user/signup-with-recaptcha", {
+        Axios.post(AppConfig.api + "user/signup-with-recaptcha", {
             token,
             email: "sfshd@sfsdf.sdf"
         })

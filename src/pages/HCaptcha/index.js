@@ -24,7 +24,7 @@ const Signup = () => {
         setError("");
         setLoading(true);
 
-        Axios.post("http://localhost:8080/user/signup-with-hcaptcha", {
+        Axios.post(AppConfig.api + "user/signup-with-hcaptcha", {
             token,
             email: "ghjsfgjs@fgdg.dsgds"
         })
