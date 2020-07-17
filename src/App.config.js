@@ -4,7 +4,7 @@ export default {
         reCaptcha: "6LcVLqUZAAAAAKIEDQXRDxZ3TAbpOkK1FHZKLwxz"
     },
 
-    hCaptchaSiteToken: "dfc3457f-7688-4e53-9269-961c77e14c6d",
+    hCaptchaSiteToken: "31ae272b-3a28-4770-8f74-5a8081884827",
 
     links: {
         customGoogleMaps: {

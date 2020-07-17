@@ -100,13 +100,13 @@ const routes = [
         navbar: "Infinite Scrolling",
         child: null
     },
-    /* {
+    {
         path: "/hcaptcha",
         component: Hcaptcha,
         navbar: "HCaptcha",
         child: null
     },
-    {
+    /* {
         path: "/recaptcha",
         component: ReCaptcha,
         navbar: "ReCaptcha",
