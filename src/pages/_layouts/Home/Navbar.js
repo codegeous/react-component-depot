@@ -3,8 +3,11 @@ import { useSelector } from "react-redux";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import routes from "routes";
 import { Scrollbars } from "react-custom-scrollbars";
+import useThemeSwitcher from "hooks/useThemeSwitcher";
 
 export const Navbar = () => {
+    const ThemeSwitcher = useThemeSwitcher();
+
     const isNavbarVisible = useSelector(state => state.layout.navbar);
 
     const location = useLocation();
@@ -20,6 +23,7 @@ export const Navbar = () => {
                     <h3>
                         <Link to="/">React-component-depot</Link>
                     </h3>
+                    {ThemeSwitcher}
                 </div>
 
                 <ul className="list-unstyled components">

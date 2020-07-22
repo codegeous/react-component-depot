@@ -17,6 +17,7 @@ const BatteryStatus = React.lazy(() => import("pages/BatteryStatus"));
 const InfiniteScrolling = React.lazy(() => import("pages/InfiniteScrolling"));
 const Hcaptcha = React.lazy(() => import("pages/HCaptcha"));
 const ReCaptcha = React.lazy(() => import("pages/ReCaptcha"));
+const CountrySearch = React.lazy(() => import("pages/CountrySearch"));
 
 const routes = [
     {
@@ -110,6 +111,13 @@ const routes = [
         path: "/infinite-scrolling",
         component: InfiniteScrolling,
         navbar: "Infinite Scrolling",
+        child: null
+    },
+    {
+        enabled: true,
+        path: "/auto-complete",
+        component: CountrySearch,
+        navbar: "Auto Complete",
         child: null
     },
     {

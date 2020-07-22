@@ -1,0 +1,57 @@
+body.dark-mode {
+    background: #1d2127;
+    color: #fff;
+}
+
+body.dark-mode #sidebar {
+    background: #1d2127;
+}
+
+body.dark-mode #sidebar .sidebar-header {
+    background: #12171e;
+}
+
+body.dark-mode #sidebar ul li a {
+    background: #12171e;
+}
+
+body.dark-mode .navbar {
+    background: #dad3d3 !important;
+    box-shadow: 1px 3px 0 1px #2f3139;
+}
+
+body.dark-mode .bg-light {
+    background-color: #12171e !important;
+}
+body.dark-mode .table {
+    color: #fff;
+}
+body.dark-mode #sidebar ul li a:hover {
+    background: #131820;
+    color: #ff9d9d;
+}
+
+body.dark-mode input {
+    background: #12171e;
+    color: #fff;
+    border: 1px solid #454444;
+}
+
+body.dark-mode .page-link {
+    background: transparent;
+    color: #fff;
+}
+
+body.dark-mode .page-item.disabled .page-link {
+    background: transparent;
+}
+body.dark-mode .list-group-item {
+    background: #12171e;
+}
+body.dark-mode .list-group-item.active,
+body.dark-mode .list-group-item:hover {
+    background: #ababac;
+}
+body.dark-mode .card {
+    background: #12171e;
+}

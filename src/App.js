@@ -2,6 +2,8 @@ import React, { Suspense } from "react";
 import "components/FontawsomeIcons";
 
 import "./App.css";
+import "./dark.css";
+
 import Layout from "pages/_layouts/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
