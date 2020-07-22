@@ -17,10 +17,7 @@ const ShowAndHide = () => {
         <>
             <Header title="Show and hide elements based on state in hooks" />
 
-            <ExternalInfo
-                code={AppConfig.links.showAndHideElements.code}
-                tutorial={AppConfig.links.showAndHideElements.tutorial}
-            />
+            <ExternalInfo page="showAndHideElements" />
 
             <div className="row w-100">
                 <div className="col mb-3 col-12 text-center">

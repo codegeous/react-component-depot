@@ -1,4 +1,5 @@
 import React from "react";
+import withExternalInfo from "hoc/withExternalInfo";
 
 const ExternalInfo = ({ code = "", tutorial = "" }) => {
     return (
@@ -23,4 +24,4 @@ const ExternalInfo = ({ code = "", tutorial = "" }) => {
     );
 };
 
-export default ExternalInfo;
+export default withExternalInfo(ExternalInfo);

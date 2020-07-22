@@ -21,10 +21,7 @@ const OTPBox = () => {
         <>
             <Header title="Building OTP box using Hooks" />
 
-            <ExternalInfo
-                code={AppConfig.links.otpBox.code}
-                tutorial={AppConfig.links.otpBox.tutorial}
-            />
+            <ExternalInfo page="otpBox" />
 
             <div className="row">
                 <div className="col text-center">

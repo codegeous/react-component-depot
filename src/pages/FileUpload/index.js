@@ -61,10 +61,7 @@ const FileUpload = () => {
         <>
             <Header title="File upload in ReactJS" />
 
-            <ExternalInfo
-                code={AppConfig.links.fileupload.code}
-                tutorial={AppConfig.links.fileupload.tutorial}
-            />
+            <ExternalInfo page="fileupload" />
 
             <div className="row justify-content-center bg-light">
                 <div className="col-md-6 text-center">

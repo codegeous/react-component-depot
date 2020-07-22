@@ -28,10 +28,7 @@ const ContactList = () => {
         <>
             <Header title="Redux CRUD Operations (Create, Read, Update and Delete)" />
 
-            <ExternalInfo
-                code={AppConfig.links.contactListCRUD.code}
-                tutorial={AppConfig.links.contactListCRUD.tutorial}
-            />
+            <ExternalInfo page="contactListCRUD" />
 
             <div className="row">
                 <div className="col text-center">
