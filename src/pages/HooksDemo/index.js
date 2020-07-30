@@ -15,10 +15,7 @@ const HooksDemo = () => {
         <>
             <Header title="Hooks demo" />
 
-            <ExternalInfo
-                code={AppConfig.links.hooks.code}
-                tutorial={AppConfig.links.hooks.tutorial}
-            />
+            <ExternalInfo page="hooks" />
 
             <div
                 className="row justify-content-center mt-5 bg-light"

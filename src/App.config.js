@@ -1,3 +1,7 @@
+const GIT_REPO =
+    "https://github.com/codegeous/react-component-depot/tree/master/src/";
+const YOUTUBE_BASE = "https://youtu.be/";
+
 export default {
     api: process.env.REACT_APP_API_ENDPOINT,
 
@@ -10,74 +14,72 @@ export default {
 
     links: {
         customGoogleMaps: {
-            tutorial: "https://youtu.be/xUsn2nj4fy0",
-            code:
-                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/GoogleMaps/CustomStyle/index.js"
+            tutorial: `${YOUTUBE_BASE}xUsn2nj4fy0`,
+            code: `${GIT_REPO}pages/GoogleMaps/CustomStyle/index.js`
         },
         buttonLoaderHooks: {
-            tutorial: "https://youtu.be/nCEnqQABC5A",
-            code:
-                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/ButtonLoadingSpinner/index.js"
+            tutorial: `${YOUTUBE_BASE}nCEnqQABC5A`,
+            code: `${GIT_REPO}pages/ButtonLoadingSpinner/index.js`
         },
         otpBox: {
-            tutorial: "https://youtu.be/qf56frPk5lA",
-            code:
-                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/OTPBox/index.js"
+            tutorial: `${YOUTUBE_BASE}qf56frPk5lA`,
+            code: `${GIT_REPO}pages/OTPBox/index.js`
         },
         contactListCRUD: {
             tutorial: "",
-            code:
-                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/ContactList/index.js"
+            code: `${GIT_REPO}pages/ContactList/index.js`
         },
         showAndHideElements: {
-            tutorial: "https://youtu.be/jRxoO-Zd0pQ",
-            code:
-                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/ReactBasics/ShowAndHide/index.js"
+            tutorial: `${YOUTUBE_BASE}jRxoO-Zd0pQ`,
+            code: `${GIT_REPO}pages/ReactBasics/ShowAndHide/index.js`
         },
         scrollIndicator: {
-            tutorial: "https://youtu.be/-rYmnXV6sYw",
-            code:
-                "https://github.com/codegeous/react-component-depot/tree/master/src/components/ScrollIndicator/index.js"
+            tutorial: `${YOUTUBE_BASE}-rYmnXV6sYw`,
+            code: `${GIT_REPO}components/ScrollIndicator/index.js`
         },
         floatingYoutubePlayer: {
-            tutorial: "https://youtu.be/lT4uJI6TXAg",
-            code:
-                "https://github.com/codegeous/react-component-depot/tree/master/src/components/YoutubePlayer/index.js"
+            tutorial: `${YOUTUBE_BASE}lT4uJI6TXAg`,
+            code: `${GIT_REPO}components/YoutubePlayer/index.js`
         },
         signup: {
             tutorial: "",
-            code:
-                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/Signup/index.js"
+            code: `${GIT_REPO}pages/Signup/index.js`
         },
         hooks: {
-            tutorial: "https://youtu.be/fT7jBMG7GIM",
-            code:
-                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/HooksDemo/index.js"
+            tutorial: `${YOUTUBE_BASE}fT7jBMG7GIM`,
+            code: `${GIT_REPO}pages/HooksDemo/index.js`
         },
         datatable: {
-            tutorial: "https://youtu.be/emX5KvZ6Hbo",
-            code:
-                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/DataTable/index.js"
+            tutorial: `${YOUTUBE_BASE}emX5KvZ6Hbo`,
+            code: `${GIT_REPO}pages/DataTable/index.js`
         },
         batteryStatus: {
-            tutorial: "https://youtu.be/50cOgnVmflE",
-            code:
-                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/BatteryStatus/index.js"
+            tutorial: `${YOUTUBE_BASE}50cOgnVmflE`,
+            code: `${GIT_REPO}pages/BatteryStatus/index.js`
         },
         fileupload: {
-            tutorial: "https://youtu.be/_XD5ko7Fy9E",
-            code:
-                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/FileUpload/index.js"
+            tutorial: `${YOUTUBE_BASE}_XD5ko7Fy9E`,
+            code: `${GIT_REPO}pages/FileUpload/index.js`
         },
         geoLocation: {
-            tutorial: "https://youtu.be/TID8Z29je5o",
-            code:
-                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/GeoLocation/index.js"
+            tutorial: `${YOUTUBE_BASE}TID8Z29je5o`,
+            code: `${GIT_REPO}pages/GeoLocation/index.js`
         },
         infniteScrolling: {
-            tutorial: "https://youtu.be/8nFNxnjoTZ4",
-            code:
-                "https://github.com/codegeous/react-component-depot/tree/master/src/pages/InfiniteScrolling/index.js"
+            tutorial: `${YOUTUBE_BASE}8nFNxnjoTZ4`,
+            code: `${GIT_REPO}pages/InfiniteScrolling/index.js`
+        },
+        recaptcha: {
+            tutorial: `${YOUTUBE_BASE}e_vMoPCBfqU`,
+            code: `${GIT_REPO}pages/ReCaptcha/index.js`
+        },
+        hcaptcha: {
+            tutorial: `${YOUTUBE_BASE}KcLeXxlkqf0`,
+            code: `${GIT_REPO}pages/HCaptcha/index.js`
+        },
+        autocomplete: {
+            tutorial: `${YOUTUBE_BASE}G2QyeafA3gw`,
+            code: `${GIT_REPO}pages/CountrySearch/index.js`
         }
     },
     youtubeVideos: [

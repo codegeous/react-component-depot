@@ -35,10 +35,7 @@ const Signup = () => {
             <Header title="Signup Form" />
             <div className="row justify-content-center">
                 <div className="col-lg-6 text-center">
-                    <ExternalInfo
-                        code={AppConfig.links.signup.code}
-                        tutorial={AppConfig.links.signup.tutorial}
-                    />
+                    <ExternalInfo page="signup" />
 
                     <div className="card bg-light">
                         <article

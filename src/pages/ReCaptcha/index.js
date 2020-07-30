@@ -7,6 +7,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import AppConfig from "App.config";
 import useButtonLoader from "hooks/useButtonLoader";
 import Axios from "axios";
+import ExternalInfo from "components/ExternalInfo";
 
 const ReCaptchaSignup = () => {
     const [PasswordInputType, ToggleIcon] = usePasswordToggle();
@@ -47,6 +48,9 @@ const ReCaptchaSignup = () => {
     return (
         <>
             <Header title="Signup Form with reCaptcha" />
+
+            <ExternalInfo page="recaptcha" />
+
             <div className="row justify-content-center">
                 <div className="col-lg-6 text-center">
                     <div className="card bg-light">

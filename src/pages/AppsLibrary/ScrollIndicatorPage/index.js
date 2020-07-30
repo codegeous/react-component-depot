@@ -24,10 +24,7 @@ const ScrollIndicatorPage = () => {
         <>
             <Header title="Scroll Indicator" />
 
-            <ExternalInfo
-                code={AppConfig.links.scrollIndicator.code}
-                tutorial={AppConfig.links.scrollIndicator.tutorial}
-            />
+            <ExternalInfo page="scrollIndicator" />
 
             <ScrollIndicator />
             <ScrollToTop />

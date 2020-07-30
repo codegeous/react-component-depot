@@ -16,10 +16,7 @@ const GoogleMaps = () => {
             <Header title="Google Maps Custom Styles" />
 
             <div className="row w-100">
-                <ExternalInfo
-                    code={AppConfig.links.customGoogleMaps.code}
-                    tutorial={AppConfig.links.customGoogleMaps.tutorial}
-                />
+                <ExternalInfo page="customGoogleMaps" />
 
                 <div className="alert alert-danger" role="alert">
                     <h4 className="alert-heading">
