@@ -76,6 +76,10 @@ export default {
         hcaptcha: {
             tutorial: `${YOUTUBE_BASE}KcLeXxlkqf0`,
             code: `${GIT_REPO}pages/HCaptcha/index.js`
+        },
+        autocomplete: {
+            tutorial: `${YOUTUBE_BASE}G2QyeafA3gw`,
+            code: `${GIT_REPO}pages/CountrySearch/index.js`
         }
     },
     youtubeVideos: [
