@@ -5,7 +5,7 @@ const Header = ({ headers, onSorting }) => {
     const [sortingField, setSortingField] = useState("");
     const [sortingOrder, setSortingOrder] = useState("asc");
 
-    const onSortingChange = field => {
+    const onSortingChange = (field) => {
         const order =
             field === sortingField && sortingOrder === "asc" ? "desc" : "asc";
 

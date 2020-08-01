@@ -18,6 +18,8 @@ const InfiniteScrolling = React.lazy(() => import("pages/InfiniteScrolling"));
 const Hcaptcha = React.lazy(() => import("pages/HCaptcha"));
 const ReCaptcha = React.lazy(() => import("pages/ReCaptcha"));
 const CountrySearch = React.lazy(() => import("pages/CountrySearch"));
+const DataTable2 = React.lazy(() => import("pages/DataTable2"));
+const BuiltWithReact = React.lazy(() => import("pages/BuiltWithReact"));
 
 const routes = [
     {
@@ -28,111 +30,125 @@ const routes = [
         child: [
             {
                 name: "Basic Google Maps",
-                path: "/map"
+                path: "/map",
             },
             {
                 name: "Custom Google Maps",
-                path: "/map/custom-style"
-            }
-        ]
+                path: "/map/custom-style",
+            },
+        ],
     },
     {
         enabled: true,
         path: "/button-loader",
         component: ButtonLoadingSpinner,
         navbar: "Loading Spinners",
-        child: null
+        child: null,
     },
     {
         enabled: true,
         path: "/otp-box",
         component: OTPBox,
         navbar: "OTP Box",
-        child: null
+        child: null,
     },
     {
         enabled: false,
         path: "/contact-list",
         component: ContactList,
         navbar: "Contact List App",
-        child: null
+        child: null,
     },
     {
         enabled: true,
         path: "/video-players",
         component: VideoPlayers,
         navbar: "Video Players",
-        child: null
+        child: null,
     },
     {
         enabled: true,
         path: "/apps-library/scroll-indicator",
         component: AppsLibrary,
         navbar: "Scroll Indicator",
-        child: null
+        child: null,
     },
     {
         enabled: true,
         path: "/signup",
         component: Signup,
         navbar: "Signup Form",
-        child: null
+        child: null,
     },
     {
         enabled: true,
         path: "/hooks-demo",
         component: HooksDemo,
         navbar: "Hooks demo",
-        child: null
+        child: null,
     },
     {
         enabled: true,
         path: "/data-table",
         component: DataTable,
         navbar: "Data Table",
-        child: null
+        child: null,
     },
     {
         enabled: true,
         path: "/file-upload",
         component: FileUpload,
         navbar: "File Upload",
-        child: null
+        child: null,
     },
     {
         enabled: true,
         path: "/battery-status",
         component: BatteryStatus,
         navbar: "Battery Status",
-        child: null
+        child: null,
     },
     {
         enabled: true,
         path: "/infinite-scrolling",
         component: InfiniteScrolling,
         navbar: "Infinite Scrolling",
-        child: null
+        child: null,
     },
     {
         enabled: true,
         path: "/auto-complete",
         component: CountrySearch,
         navbar: "Auto Complete",
-        child: null
+        child: null,
     },
     {
         enabled: true,
         path: "/hcaptcha",
         component: Hcaptcha,
         navbar: "HCaptcha",
-        child: null
+        child: null,
     },
     {
         enabled: true,
         path: "/recaptcha",
         component: ReCaptcha,
         navbar: "ReCaptcha",
-        child: null
+        child: null,
+    },
+    {
+        enabled: true,
+        path: "/data-table-large",
+        component: DataTable2,
+        navbar: "",
+        child: null,
+    },
+    {
+        enabled: true,
+        path: "/built-with-react",
+        component: BuiltWithReact,
+        navbar: "",
+        child: null,
     },
     {
         enabled: true,
@@ -142,10 +158,10 @@ const routes = [
         child: [
             {
                 name: "Show and Hide based on State",
-                path: "/react-basics/show-hide-elements"
-            }
-        ]
-    }
+                path: "/react-basics/show-hide-elements",
+            },
+        ],
+    },
 ];
 
-export default routes.filter(route => route.enabled);
+export default routes.filter((route) => route.enabled);
