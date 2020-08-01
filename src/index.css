@@ -156,6 +156,12 @@ a.article:hover {
     color: #fff !important;
 }
 
+.github-btns .widget .btn {
+    padding: 4px !important;
+}
+.github-btns .widget .social-count {
+    padding: 4px !important;
+}
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
