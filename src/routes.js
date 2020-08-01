@@ -20,6 +20,7 @@ const ReCaptcha = React.lazy(() => import("pages/ReCaptcha"));
 const CountrySearch = React.lazy(() => import("pages/CountrySearch"));
 const DataTable2 = React.lazy(() => import("pages/DataTable2"));
 const BuiltWithReact = React.lazy(() => import("pages/BuiltWithReact"));
+const GeoLocation = React.lazy(() => import("pages/GeoLocation"));
 
 const routes = [
     {
@@ -141,6 +142,13 @@ const routes = [
         path: "/data-table-large",
         component: DataTable2,
         navbar: "",
+        child: null,
+    },
+    {
+        enabled: true,
+        path: "/find-my-ip",
+        component: GeoLocation,
+        navbar: "Find My IP",
         child: null,
     },
     {
