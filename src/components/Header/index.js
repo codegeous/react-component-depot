@@ -11,7 +11,7 @@ const Header = ({ title = "Page Title" }) => {
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <div className="container-fluid">
+            <div className="container-fluid pr-5">
                 <button
                     type="button"
                     id="sidebarCollapse"

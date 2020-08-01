@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import routes from "routes";
 import { Scrollbars } from "react-custom-scrollbars";
 import useThemeSwitcher from "hooks/useThemeSwitcher";
+import ReactGA from "react-ga";
 
 export const Navbar = () => {
     const ThemeSwitcher = useThemeSwitcher();
@@ -23,7 +24,29 @@ export const Navbar = () => {
                     <h3>
                         <Link to="/">React-component-depot</Link>
                     </h3>
-                    {ThemeSwitcher}
+                    <p className="mb-0 text-white">{ThemeSwitcher}</p>
+                    <p className="mb-0 mt-2">
+                        <div>
+                            <a
+                                class="github-button mr-3"
+                                target="_blank"
+                                href="https://github.com/codegeous/react-component-depot"
+                                data-size="large"
+                                data-show-count="true"
+                                aria-label="Star codegeous/react-component-depot on GitHub"
+                            >
+                                Star
+                            </a>
+                        </div>
+
+                        <div
+                            class="g-ytsubscribe ml-3"
+                            data-channelid="UCdItDI6oTgPW7l9WOJI7ItA"
+                            data-layout="default"
+                            data-count="default"
+                            style={{ height: "35px" }}
+                        ></div>
+                    </p>
                 </div>
 
                 <ul className="list-unstyled components">
