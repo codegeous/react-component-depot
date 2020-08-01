@@ -10,7 +10,10 @@ import {
     faExpand,
     faCompress,
     faBolt,
-    faSpinner
+    faSpinner,
+    faSort,
+    faSortUp,
+    faSortDown,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -24,5 +27,8 @@ library.add(
     faExpand,
     faCompress,
     faBolt,
-    faSpinner
+    faSpinner,
+    faSort,
+    faSortUp,
+    faSortDown
 );

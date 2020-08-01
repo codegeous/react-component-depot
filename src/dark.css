@@ -47,6 +47,7 @@ body.dark-mode .page-item.disabled .page-link {
 }
 body.dark-mode .list-group-item {
     background: #12171e;
+    color: #fff;
 }
 body.dark-mode .list-group-item.active,
 body.dark-mode .list-group-item:hover {
