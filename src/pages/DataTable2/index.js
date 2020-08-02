@@ -89,17 +89,16 @@ const DataTable2 = () => {
                                 }}
                             />
                         </div>
-                        <div className="row">
-                            <div className="col">
-                                <Pagination
-                                    total={totalItems}
-                                    itemsPerPage={ITEMS_PER_PAGE}
-                                    currentPage={currentPage}
-                                    onPageChange={(page) =>
-                                        setCurrentPage(page)
-                                    }
-                                />
-                            </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col">
+                            <Pagination
+                                total={totalItems}
+                                itemsPerPage={ITEMS_PER_PAGE}
+                                currentPage={currentPage}
+                                onPageChange={(page) => setCurrentPage(page)}
+                            />
                         </div>
                     </div>
 

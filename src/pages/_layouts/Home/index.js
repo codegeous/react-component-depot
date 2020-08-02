@@ -2,12 +2,19 @@ import React, { useEffect } from "react";
 import { Navbar } from "./Navbar";
 import { useSelector } from "react-redux";
 import YoutubePlayer from "components/YoutubePlayer";
-import usePageViews from "hooks/usePageViews";
+
+import ReactGA from "react-ga";
+import { withRouter } from "react-router-dom";
+import AppConfig from "App.config";
+
+ReactGA.initialize(AppConfig.GOOGLE.GA_TRACKING_CODE);
 
 const Home = ({ children }) => {
     const isNavbarVisible = useSelector((state) => state.layout.navbar);
 
-    usePageViews();
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    });
 
     return (
         <>
@@ -58,4 +65,5 @@ const Home = ({ children }) => {
         </>
     );
 };
-export default Home;
+
+export default withRouter(Home);

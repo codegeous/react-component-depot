@@ -6,20 +6,13 @@ import "./dark.css";
 
 import Layout from "pages/_layouts/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { createBrowserHistory } from "history";
 import routes from "routes";
 import PageNotFound from "pages/PageNotFound";
 import Home from "pages/Home";
-import ReactGA from "react-ga";
-import AppConfig from "App.config";
-
-const history = createBrowserHistory();
-
-ReactGA.initialize(AppConfig.GOOGLE.GA_TRACKING_CODE);
 
 function App() {
     return (
-        <Router history={history}>
+        <Router>
             <Layout>
                 <Suspense fallback={<div>Loading...</div>}>
                     <Switch>
