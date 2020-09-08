@@ -82,6 +82,10 @@ export default {
             tutorial: `${YOUTUBE_BASE}G2QyeafA3gw`,
             code: `${GIT_REPO}pages/CountrySearch/index.js`,
         },
+        searchFilter: {
+            tutorial: `${YOUTUBE_BASE}aBWwJ4ibpps`,
+            code: `${GIT_REPO}pages/SearchFilter/index.js`,
+        },
     },
     youtubeVideos: [
         {

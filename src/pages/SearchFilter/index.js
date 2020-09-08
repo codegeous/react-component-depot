@@ -3,6 +3,7 @@ import Header from "components/Header";
 import CountriesList from "resources/data/countries-list.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMemo } from "react";
+import ExternalInfo from "components/ExternalInfo";
 
 const SearchFilter = () => {
     const [search, setSearch] = useState("");
@@ -21,7 +22,10 @@ const SearchFilter = () => {
     return (
         <>
             <Header title="Country Search (Using useMemo)" />
-            <div className="row justify-content-center">
+
+            <ExternalInfo page="searchFilter" />
+
+            <div className="row justify-content-center mt-4">
                 <div className="col-lg-6 text-center">
                     <div className="row">
                         <div className="col-12">
@@ -47,11 +51,8 @@ const SearchFilter = () => {
                         </div>
                         <div className="col-12">
                             <ul className="list-group text-left">
-                                {countries.map((country) => (
-                                    <CountryListItem
-                                        {...country}
-                                        key={country.name}
-                                    />
+                                {countries.map((country, idx) => (
+                                    <CountryListItem {...country} key={idx} />
                                 ))}
                             </ul>
                         </div>

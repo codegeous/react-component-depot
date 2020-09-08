@@ -201,3 +201,24 @@ a.article:hover {
         display: none;
     }
 }
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #5d5d5d;
+    font-weight: bold;
+    margin: 35px 0;
+}
+.separator::before,
+.separator::after {
+    content: "";
+    flex: 1;
+    border-bottom: 3px solid #c6bebe;
+}
+.separator::before {
+    margin-right: 0.25em;
+}
+.separator::after {
+    margin-left: 0.25em;
+}
