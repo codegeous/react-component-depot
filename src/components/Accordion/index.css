@@ -1,0 +1,20 @@
+.custom-accordion .accordion-icon {
+    position: absolute;
+    right: 15px;
+    transition: all 0.3s;
+}
+
+.custom-accordion .card-body {
+    display: none;
+}
+
+.custom-accordion .accordion-active .card-body {
+    display: block;
+}
+
+.accordion-active .accordion-icon {
+    transform: rotate(90deg);
+}
+.custom-accordion .card-header {
+    cursor: pointer;
+}

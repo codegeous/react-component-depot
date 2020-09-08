@@ -8,9 +8,9 @@ const ContactCard = ({ name, phone, index }) => {
     const [inputs, setInputs] = useState({ name, phone });
 
     const updateFormValue = ({ target: { name, value } }) =>
-        setInputs(inputObj => ({ ...inputObj, [name]: value }));
+        setInputs((inputObj) => ({ ...inputObj, [name]: value }));
 
-    const toggleEditMode = () => setEditMode(mode => !mode);
+    const toggleEditMode = () => setEditMode((mode) => !mode);
 
     const updateContactData = () => {
         dispatch(updateContact({ ...inputs }, index));
@@ -42,7 +42,7 @@ const ContactCard = ({ name, phone, index }) => {
                                         className="form-control"
                                         value={inputs.name}
                                         name="name"
-                                        onChange={e => updateFormValue(e)}
+                                        onChange={(e) => updateFormValue(e)}
                                     />
                                 )}
                             </h5>
@@ -54,7 +54,7 @@ const ContactCard = ({ name, phone, index }) => {
                                         className="form-control"
                                         value={inputs.phone}
                                         name="phone"
-                                        onChange={e => updateFormValue(e)}
+                                        onChange={(e) => updateFormValue(e)}
                                     />
                                 )}
                             </p>

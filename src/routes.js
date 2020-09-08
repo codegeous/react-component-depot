@@ -21,6 +21,8 @@ const CountrySearch = React.lazy(() => import("pages/CountrySearch"));
 const DataTable2 = React.lazy(() => import("pages/DataTable2"));
 const BuiltWithReact = React.lazy(() => import("pages/BuiltWithReact"));
 const GeoLocation = React.lazy(() => import("pages/GeoLocation"));
+const SearchFilter = React.lazy(() => import("pages/SearchFilter"));
+const AccordionDemo = React.lazy(() => import("pages/AccordionDemo"));
 
 const routes = [
     {
@@ -156,6 +158,20 @@ const routes = [
         path: "/built-with-react",
         component: BuiltWithReact,
         navbar: "",
+        child: null,
+    },
+    {
+        enabled: true,
+        path: "/search-filter",
+        component: SearchFilter,
+        navbar: "Search Filter",
+        child: null,
+    },
+    {
+        enabled: true,
+        path: "/accordion",
+        component: AccordionDemo,
+        navbar: "Accordion",
         child: null,
     },
     {
