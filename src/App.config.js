@@ -86,6 +86,10 @@ export default {
             tutorial: `${YOUTUBE_BASE}aBWwJ4ibpps`,
             code: `${GIT_REPO}pages/SearchFilter/index.js`,
         },
+        accordion: {
+            tutorial: `${YOUTUBE_BASE}AjQctXfmOqw`,
+            code: `${GIT_REPO}pages/AccordionDemo/index.js`,
+        },
     },
     youtubeVideos: [
         {
