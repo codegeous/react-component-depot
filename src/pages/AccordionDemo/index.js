@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "components/Header";
 import Accordion from "components/Accordion";
+import ExternalInfo from "components/ExternalInfo";
 
 const AccordionDemo = () => {
     const AccordionData = [
