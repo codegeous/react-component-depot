@@ -1,68 +1,79 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Welcome to react-component-depot!
 
-In the project directory, you can run:
+[![Netlify Status](https://api.netlify.com/api/v1/badges/26d63fc5-4fe5-44fd-9d40-fc4d332e360c/deploy-status)](https://app.netlify.com/sites/react-component-depot/deploys)
 
-### `npm start`
+A repository contains an extensive list of react components built from scratch with youtube linked tutorials. 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ https://react-component-depot.netlify.app
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+# Tutorials
 
-### `npm test`
+All the components in this repo is covered by the tutorials on the [D'Coders YouTube channel](https://www.youtube.com/channel/UCdItDI6oTgPW7l9WOJI7ItA/). The link for the tutorial will be given at the top of each page.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Project
 
-### `npm run build`
+Project is bootstrapped with [create-react-app](https://create-react-app.dev/) and uses react V16.13.1
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Folder Structure
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Please follow the folder structure of CRA. You can find more in this in their official github page.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+react-component-depot
+├── README.md
+├── node_modules
+├── package.json
+├── .gitignore
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── actions
+    ├── components
+    ├── hoc
+    ├── hooks
+    ├── pages
+    ├── reducers
+    ├── resources
+    ├── App.css
+    ├── App.js
+    ├── App.test.js
+    ├── index.css
+    ├── index.js
+    ├── routes.js
+    ├── logo.svg
+    └── serviceWorker.js
+    └── setupTests.js
+```
 
-### `npm run eject`
+> **Note:** New **Files and Folders** will be added to the **src** over time.
+>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+🗀 **pages** - Pages are the entry points for all the user facing demo pages
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🗀 **hooks** - Collection of hooks created and used in this application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+🗀  **actions** - Contains the action creators for redux
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+🗀  **components** - Reusable components used in our application
 
-## Learn More
+📄 **routes.js** - Used to define application routes and Menu items
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Tutorials List
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Building a datatable in ReactJS from scratch with pagination, search and sorting [[Demo]](https://react-component-depot.netlify.app/data-table)  [[Tutorial]](https://youtu.be/emX5KvZ6Hbo)
+- File Upload with cancel button and progress bar In ReactJS [[Demo]](https://react-component-depot.netlify.app/file-upload)[[Tutorial]](https://youtu.be/_XD5ko7Fy9E)
+- How to get client IP address and location in ReactJS [[Demo]](https://react-component-depot.netlify.app/find-my-ip) [[Tutorial]](https://youtu.be/TID8Z29je5o)
+- Infinite scrolling in ReactJS using react-waypoint  [[Demo]](https://react-component-depot.netlify.app/infinite-scrolling) [[Tutorial]](https://youtu.be/8nFNxnjoTZ4)
+- Integrate Google's recptcha in ReactJS and verifying user response in NodeJS [[Demo]](https://react-component-depot.netlify.app/recaptcha) [[Tutorial]](https://youtu.be/e_vMoPCBfqU)
+- How to customize scroll bar in ReactJS [[Tutorial]](https://youtu.be/7GO4P0ewVfI)
+- How to deploy ReactJS app in netlify for free with CI/CD [[Tutorial]](https://youtu.be/HICAn3ArLZU)
+- Integrate hCaptcha in ReactJS and verifying user response in NodeJS [[Demo]](https://react-component-depot.netlify.app/hcaptcha) [[Tutorial]](https://youtu.be/KcLeXxlkqf0)
+- Building an autocomplete component in React JS with keyboard navigation [[Demo]](https://react-component-depot.netlify.app/auto-complete) [[Tutorial]](https://youtu.be/G2QyeafA3gw)
+- Easy Dark mode switcher in react app using a custom hook [[Tutorial]](https://youtu.be/qF49m6C2Y8I)
+- Building a search filter with react useMemo hook [[Demo]](https://react-component-depot.netlify.app/search-filter) [[Tutorial]](https://youtu.be/aBWwJ4ibpps)
+- Show and Hide elements with a custom visibility toggle hook in ReactJS [[Demo]](https://react-component-depot.netlify.app/hooks-demo) [[Tutorial]](https://youtu.be/iRPGE_AfGTQ)
+- Building accordion panel in reactJS with single & multiple configuration [[Demo]](https://react-component-depot.netlify.app/accordion) [[Tutorial]](https://youtu.be/AjQctXfmOqw)
