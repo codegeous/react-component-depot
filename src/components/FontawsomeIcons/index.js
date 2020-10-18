@@ -16,6 +16,7 @@ import {
     faSortDown,
     faMoon,
     faChevronRight,
+    faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -34,5 +35,6 @@ library.add(
     faSortUp,
     faSortDown,
     faMoon,
-    faChevronRight
+    faChevronRight,
+    faGlobe
 );
