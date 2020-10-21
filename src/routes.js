@@ -176,7 +176,7 @@ const routes = [
         child: null,
     },
     {
-        enabled: true,
+        enabled: false,
         path: "/leaflet",
         component: Leaflet,
         navbar: "React Leaflet",
