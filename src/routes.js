@@ -23,6 +23,7 @@ const BuiltWithReact = React.lazy(() => import("pages/BuiltWithReact"));
 const GeoLocation = React.lazy(() => import("pages/GeoLocation"));
 const SearchFilter = React.lazy(() => import("pages/SearchFilter"));
 const AccordionDemo = React.lazy(() => import("pages/AccordionDemo"));
+const Leaflet = React.lazy(() => import("pages/Leaflet"));
 
 const routes = [
     {
@@ -87,7 +88,7 @@ const routes = [
         enabled: true,
         path: "/hooks-demo",
         component: HooksDemo,
-        navbar: "Hooks demo",
+        navbar: "Custom Hooks demo",
         child: null,
     },
     {
@@ -173,6 +174,26 @@ const routes = [
         component: AccordionDemo,
         navbar: "Accordion",
         child: null,
+    },
+    {
+        enabled: false,
+        path: "/leaflet",
+        component: Leaflet,
+        navbar: "React Leaflet",
+        child: [
+            {
+                name: "Basic Map",
+                path: "/leaflet/basic",
+            },
+            {
+                name: "Markers",
+                path: "/leaflet/markers",
+            },
+            {
+                name: "Get User Location",
+                path: "/leaflet/user-location",
+            },
+        ],
     },
     {
         enabled: true,
