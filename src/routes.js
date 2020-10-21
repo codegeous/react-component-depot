@@ -88,7 +88,7 @@ const routes = [
         enabled: true,
         path: "/hooks-demo",
         component: HooksDemo,
-        navbar: "Hooks demo",
+        navbar: "Custom Hooks demo",
         child: null,
     },
     {
