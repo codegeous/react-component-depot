@@ -90,6 +90,10 @@ export default {
             tutorial: `${YOUTUBE_BASE}AjQctXfmOqw`,
             code: `${GIT_REPO}pages/AccordionDemo/index.js`,
         },
+        leafletBasic: {
+            tutorial: `${YOUTUBE_BASE}i9oX1upSKjI`,
+            code: `${GIT_REPO}pages/Leaflet/basic.js`,
+        },
     },
     youtubeVideos: [
         {
