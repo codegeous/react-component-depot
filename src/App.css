@@ -36,6 +36,7 @@
         transform: rotate(360deg);
     }
 }
+
 .card-hover {
     opacity: 0.95;
 }
