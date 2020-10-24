@@ -44,6 +44,7 @@ a:focus {
     border-radius: 0;
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
 }
 
 .navbar-btn {
@@ -51,7 +52,24 @@ a:focus {
     outline: none !important;
     border: none;
 }
-
+.user-notification {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: #ffeb3b;
+    border: 1px solid #e3cf1f;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(148, 148, 148, 1);
+    -moz-box-shadow: 0px 0px 9px 0px rgba(148, 148, 148, 1);
+    box-shadow: 0px 0px 9px 0px rgba(148, 148, 148, 1);
+    color: #c00000;
+    padding: 6px 0;
+}
+.user-notification a {
+    color: #007bffbd;
+}
 .line {
     width: 100%;
     height: 1px;
