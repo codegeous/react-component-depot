@@ -24,6 +24,7 @@ const GeoLocation = React.lazy(() => import("pages/GeoLocation"));
 const SearchFilter = React.lazy(() => import("pages/SearchFilter"));
 const AccordionDemo = React.lazy(() => import("pages/AccordionDemo"));
 const Leaflet = React.lazy(() => import("pages/Leaflet"));
+const ImageZoom = React.lazy(() => import("pages/ImageZoom"));
 
 const routes = [
     {
@@ -173,6 +174,13 @@ const routes = [
         path: "/accordion",
         component: AccordionDemo,
         navbar: "Accordion",
+        child: null,
+    },
+    {
+        enabled: true,
+        path: "/image-zoom",
+        component: ImageZoom,
+        navbar: "Image Zoom",
         child: null,
     },
     {
