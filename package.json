@@ -29,6 +29,7 @@
         "react-spring": "^8.0.27",
         "react-use": "^14.2.0",
         "react-waypoint": "^9.0.2",
+        "react-zoom-pan-pinch": "^1.6.1",
         "redux": "^4.0.5",
         "redux-thunk": "^2.3.0"
     },

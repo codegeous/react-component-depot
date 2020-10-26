@@ -10,7 +10,7 @@ import cities from "./cities.json";
 
 const markerIcon = new L.Icon({
     iconUrl: require("resources/images/marker.png"),
-    iconSize: [35, 45],
+    iconSize: [40, 40],
     iconAnchor: [17, 46], //[left/right, top/bottom]
     popupAnchor: [0, -46], //[left/right, top/bottom]
 });
