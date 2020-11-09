@@ -25,6 +25,7 @@ const SearchFilter = React.lazy(() => import("pages/SearchFilter"));
 const AccordionDemo = React.lazy(() => import("pages/AccordionDemo"));
 const Leaflet = React.lazy(() => import("pages/Leaflet"));
 const ImageZoom = React.lazy(() => import("pages/ImageZoom"));
+const FileDownloader = React.lazy(() => import("pages/FileDownloader"));
 
 const routes = [
     {
@@ -181,6 +182,13 @@ const routes = [
         path: "/image-zoom",
         component: ImageZoom,
         navbar: "Image Zoom",
+        child: null,
+    },
+    {
+        enabled: true,
+        path: "/file-downloader",
+        component: FileDownloader,
+        navbar: "File Downloader",
         child: null,
     },
     {
