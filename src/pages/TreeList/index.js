@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "components/Header";
 import Tree from "components/Tree";
+import ExternalInfo from "components/ExternalInfo";
 
 const treeData = [
   {
@@ -76,6 +77,8 @@ const TreeList = () => {
   return (
     <>
       <Header title="Tree Data Visualization" />
+      <ExternalInfo page="treeList" />
+
       <div className="row">
         <div className="col text-center">
           <h2>Tree Visualization component</h2>
