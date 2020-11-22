@@ -96,7 +96,7 @@ export default {
     },
     treeList: {
       tutorial: `${YOUTUBE_BASE}uRSzyVubap4`,
-      code: `${GIT_REPO}pages/TreeList/basic.js`,
+      code: `${GIT_REPO}pages/TreeList/index.js`,
     },
   },
   youtubeVideos: [
