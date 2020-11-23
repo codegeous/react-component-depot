@@ -2,6 +2,7 @@ import React from "react";
 import Header from "components/Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useFileDownloader from "hooks/useFileDownloader";
+import ExternalInfo from "components/ExternalInfo";
 
 const files = [
   {
