@@ -98,6 +98,10 @@ export default {
       tutorial: `${YOUTUBE_BASE}uRSzyVubap4`,
       code: `${GIT_REPO}pages/TreeList/index.js`,
     },
+    fileDownloader: {
+      tutorial: `${YOUTUBE_BASE}0AS9Gfd1j5s`,
+      code: `${GIT_REPO}pages/FileDownloader/index.js`,
+    },
   },
   youtubeVideos: [
     {

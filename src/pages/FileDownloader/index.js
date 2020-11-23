@@ -2,6 +2,7 @@ import React from "react";
 import Header from "components/Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useFileDownloader from "hooks/useFileDownloader";
+import ExternalInfo from "components/ExternalInfo";
 
 const files = [
   {
@@ -41,6 +42,9 @@ const FileDownloader = () => {
   return (
     <>
       <Header title="File downloader with progress bar" />
+
+      <ExternalInfo page="fileDownloader" />
+
       <div className="row">
         <div className="col text-center">
           <h2>File Downloader with progress bar in react</h2>
