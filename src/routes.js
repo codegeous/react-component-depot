@@ -217,6 +217,14 @@ const routes = [
         name: "Get User Location",
         path: "/leaflet/user-location",
       },
+      {
+        name: "Draw Shapes",
+        path: "/leaflet/draw-on-map",
+      },
+      {
+        name: "Draw Polygon",
+        path: "/leaflet/polygon",
+      },
     ],
   },
   {
