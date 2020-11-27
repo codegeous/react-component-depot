@@ -94,6 +94,18 @@ export default {
       tutorial: `${YOUTUBE_BASE}i9oX1upSKjI`,
       code: `${GIT_REPO}pages/Leaflet/basic.js`,
     },
+    leafletMarker: {
+      tutorial: `${YOUTUBE_BASE}UNSYoW3gkDc`,
+      code: `${GIT_REPO}pages/Leaflet/markers.js`,
+    },
+    leafletCurrentLocation: {
+      tutorial: `${YOUTUBE_BASE}7jWYLirwt0k`,
+      code: `${GIT_REPO}pages/Leaflet/currentLocation.js`,
+    },
+    leafletDraw: {
+      tutorial: `${YOUTUBE_BASE}Bp_6MkKSOQE`,
+      code: `${GIT_REPO}pages/Leaflet/draw.js`,
+    },
     treeList: {
       tutorial: `${YOUTUBE_BASE}uRSzyVubap4`,
       code: `${GIT_REPO}pages/TreeList/index.js`,
