@@ -8,6 +8,7 @@ import osm from "./osm-providers";
 import { useRef } from "react";
 import "leaflet/dist/leaflet.css";
 import "leaflet-draw/dist/leaflet.draw.css";
+import ExternalInfo from "components/ExternalInfo";
 
 delete L.Icon.Default.prototype._getIconUrl;
 
@@ -30,6 +31,8 @@ const DrawMap = () => {
   return (
     <>
       <Header title="React Leaflet - Draw polygon, circle, rectangle on map" />
+
+      <ExternalInfo page="leafletDraw" />
 
       <div className="row">
         <div className="col text-center">
