@@ -114,6 +114,10 @@ export default {
       tutorial: `${YOUTUBE_BASE}0AS9Gfd1j5s`,
       code: `${GIT_REPO}pages/FileDownloader/index.js`,
     },
+    imageZoom: {
+      tutorial: `${YOUTUBE_BASE}uhgQFqr9ezQ`,
+      code: `${GIT_REPO}pages/ImageZoom/index.js`,
+    },
   },
   youtubeVideos: [
     {
