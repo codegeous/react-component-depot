@@ -27,6 +27,7 @@ const Leaflet = React.lazy(() => import("pages/Leaflet"));
 const ImageZoom = React.lazy(() => import("pages/ImageZoom"));
 const FileDownloader = React.lazy(() => import("pages/FileDownloader"));
 const TreeList = React.lazy(() => import("pages/TreeList"));
+const Rating = React.lazy(() => import("pages/Rating"));
 
 const routes = [
   {
@@ -226,6 +227,13 @@ const routes = [
         path: "/leaflet/polygon",
       },
     ],
+  },
+  {
+    enabled: true,
+    path: "/rating",
+    component: Rating,
+    navbar: "Rating",
+    child: null,
   },
   {
     enabled: true,
