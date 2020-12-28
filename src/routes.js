@@ -61,7 +61,7 @@ const routes = [
     child: null,
   },
   {
-    enabled: false,
+    enabled: true,
     path: "/contact-list",
     component: ContactList,
     navbar: "Contact List App",
