@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "components/Header";
 import Rate from "components/Rate";
+import ExternalInfo from "components/ExternalInfo";
 
 const Rating = () => {
   const [rating, setRating] = useState(0);
@@ -8,6 +9,8 @@ const Rating = () => {
   return (
     <>
       <Header title="Star rating page" />
+
+      <ExternalInfo page="starRating" />
 
       <div className="row">
         <div className="col text-center">

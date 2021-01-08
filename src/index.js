@@ -15,7 +15,7 @@ import { Integrations } from "@sentry/tracing";
 
 Sentry.init({
   dsn:
-    "https://28b1adab68034c52827eebe4729d6a2a@o497148.ingest.sentry.io/5572837",
+    "https://6d740d803d2a4a07a51cfbaaa93e3d3a@o456774.ingest.sentry.io/5571933",
   autoSessionTracking: true,
   integrations: [new Integrations.BrowserTracing()],
 
