@@ -118,6 +118,10 @@ export default {
       tutorial: `${YOUTUBE_BASE}uhgQFqr9ezQ`,
       code: `${GIT_REPO}pages/ImageZoom/index.js`,
     },
+    starRating: {
+      tutorial: `${YOUTUBE_BASE}nErdlbLWqtA`,
+      code: `${GIT_REPO}pages/Rating/index.js`,
+    },
   },
   youtubeVideos: [
     {
