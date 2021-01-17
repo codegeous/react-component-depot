@@ -7,6 +7,7 @@ const MarkersMap = React.lazy(() => import("./markers"));
 const CurrentLocation = React.lazy(() => import("./currentLocation"));
 const DrawMap = React.lazy(() => import("./draw"));
 const PolygonMap = React.lazy(() => import("./polygon"));
+const StaticMap = React.lazy(() => import("./StaticMap"));
 
 const Leaflet = () => {
   let { path } = useRouteMatch();
@@ -17,6 +18,7 @@ const Leaflet = () => {
       <Route path={`${path}/user-location`} component={CurrentLocation} />
       <Route path={`${path}/draw-on-map`} component={DrawMap} />
       <Route path={`${path}/polygon`} component={PolygonMap} />
+      <Route path={`${path}/static-map`} component={StaticMap} />
     </Switch>
   );
 };

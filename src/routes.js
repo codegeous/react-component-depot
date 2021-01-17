@@ -227,6 +227,10 @@ const routes = [
         name: "Draw Polygon",
         path: "/leaflet/polygon",
       },
+      {
+        name: "Static Map",
+        path: "/leaflet/static-map",
+      },
     ],
   },
   {
