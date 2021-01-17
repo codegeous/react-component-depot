@@ -231,6 +231,10 @@ const routes = [
         name: "Static Map",
         path: "/leaflet/static-map",
       },
+      {
+        name: "Print",
+        path: "/leaflet/print-map",
+      },
     ],
   },
   {
