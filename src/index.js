@@ -12,17 +12,20 @@ import * as serviceWorker from "./serviceWorker";
 //Sentry error tracking
 import * as Sentry from "@sentry/react";
 import { Integrations } from "@sentry/tracing";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-Sentry.init({
-  dsn:
-    "https://6d740d803d2a4a07a51cfbaaa93e3d3a@o456774.ingest.sentry.io/5571933",
-  autoSessionTracking: true,
-  integrations: [new Integrations.BrowserTracing()],
+if (process.env.NODE_ENV) {
+  Sentry.init({
+    dsn:
+      "https://6d740d803d2a4a07a51cfbaaa93e3d3a@o456774.ingest.sentry.io/5571933",
+    autoSessionTracking: true,
+    integrations: [new Integrations.BrowserTracing()],
 
-  // We recommend adjusting this value in production, or using tracesSampler
-  // for finer control
-  tracesSampleRate: 1.0,
-});
+    // We recommend adjusting this value in production, or using tracesSampler
+    // for finer control
+    tracesSampleRate: 1.0,
+  });
+}
 
 let createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
 let store = createStoreWithMiddleware(reducers);
