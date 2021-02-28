@@ -27,6 +27,7 @@
         "react-google-recaptcha": "^2.1.0",
         "react-leaflet": "^2.7.0",
         "react-leaflet-draw": "^0.19.0",
+        "react-leaflet-easyprint": "^2.0.0",
         "react-redux": "^7.2.0",
         "react-resizable": "^1.10.1",
         "react-router-dom": "^5.1.2",

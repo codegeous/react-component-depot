@@ -28,6 +28,7 @@ const ImageZoom = React.lazy(() => import("pages/ImageZoom"));
 const FileDownloader = React.lazy(() => import("pages/FileDownloader"));
 const TreeList = React.lazy(() => import("pages/TreeList"));
 const Rating = React.lazy(() => import("pages/Rating"));
+const SimpleTabs = React.lazy(() => import("pages/SimpleTabs"));
 
 const routes = [
   {
@@ -226,6 +227,14 @@ const routes = [
         name: "Draw Polygon",
         path: "/leaflet/polygon",
       },
+      {
+        name: "Static Map",
+        path: "/leaflet/static-map",
+      },
+      {
+        name: "Print",
+        path: "/leaflet/print-map",
+      },
     ],
   },
   {
@@ -233,6 +242,13 @@ const routes = [
     path: "/rating",
     component: Rating,
     navbar: "Rating",
+    child: null,
+  },
+  {
+    enabled: true,
+    path: "/simple-tabs",
+    component: SimpleTabs,
+    navbar: "Simple Tabs",
     child: null,
   },
   {
