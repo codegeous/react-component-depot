@@ -5,6 +5,7 @@ import L from "leaflet";
 import { Map, Marker, TileLayer } from "react-leaflet";
 import osm from "./osm-providers";
 import "leaflet/dist/leaflet.css";
+import ExternalInfo from "components/ExternalInfo";
 
 delete L.Icon.Default.prototype._getIconUrl;
 
@@ -35,6 +36,8 @@ const StaticMap = () => {
   return (
     <>
       <Header title="React Leaflet - Static Map" />
+
+      <ExternalInfo page="leafletStaticMap" />
 
       <div className="row">
         <div className="col text-center">

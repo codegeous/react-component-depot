@@ -8,6 +8,7 @@ import { useRef } from "react";
 import "leaflet/dist/leaflet.css";
 import "leaflet-draw/dist/leaflet.draw.css";
 import PrintControlDefault from "react-leaflet-easyprint";
+import ExternalInfo from "components/ExternalInfo";
 const PrintControl = withLeaflet(PrintControlDefault);
 
 const PrintMap = () => {
@@ -63,6 +64,8 @@ const PrintMap = () => {
   return (
     <>
       <Header title="React Leaflet - Print" />
+
+      <ExternalInfo page="leafletPrint" />
 
       <div className="row">
         <div className="col text-center">

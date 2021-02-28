@@ -122,6 +122,18 @@ export default {
       tutorial: `${YOUTUBE_BASE}nErdlbLWqtA`,
       code: `${GIT_REPO}pages/Rating/index.js`,
     },
+    leafletStaticMap: {
+      tutorial: `${YOUTUBE_BASE}sz_FaLpMNZc`,
+      code: `${GIT_REPO}pages/Leaflet/StaticMap.js`,
+    },
+    leafletPrint: {
+      tutorial: `${YOUTUBE_BASE}mhGqgY2l-ik`,
+      code: `${GIT_REPO}pages/Leaflet/Print.js`,
+    },
+    tabs: {
+      tutorial: `${YOUTUBE_BASE}MLYH-o_EdaI`,
+      code: `${GIT_REPO}pages/SimpleTabs/index.js`,
+    },
   },
   youtubeVideos: [
     {

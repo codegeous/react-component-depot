@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "components/Header";
 import Tab from "components/Tab";
+import ExternalInfo from "components/ExternalInfo";
 
 const tabContent = [
   {
@@ -41,6 +42,8 @@ const SimpleTabs = () => {
   return (
     <>
       <Header title="Building simple Tab component in react" />
+
+      <ExternalInfo page="tabs" />
 
       <div className="row">
         <div className="col text-center">
