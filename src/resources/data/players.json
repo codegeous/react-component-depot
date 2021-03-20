@@ -1,0 +1,306 @@
+[
+  {
+    "id": 278,
+    "name": "K. Mbappé",
+    "firstname": "Kylian",
+    "lastname": "Mbappé Lottin",
+    "age": 23,
+    "birth": { "date": "1998-12-20", "place": "Paris", "country": "France" },
+    "nationality": "France",
+    "height": "178 cm",
+    "weight": "73 kg",
+    "injured": false,
+    "photo": "https://media.api-sports.io/football/players/278.png"
+  },
+  {
+    "id": 2059,
+    "name": "W. Ben Yedder",
+    "firstname": "Wissam",
+    "lastname": "Ben Yedder",
+    "age": 31,
+    "birth": {
+      "date": "1990-08-12",
+      "place": "Sarcelles",
+      "country": "France"
+    },
+    "nationality": "France",
+    "height": "170 cm",
+    "weight": "68 kg",
+    "injured": false,
+    "photo": "https://media.api-sports.io/football/players/2059.png"
+  },
+  {
+    "id": 666,
+    "name": "M. Dembélé",
+    "firstname": "Moussa",
+    "lastname": "Dembélé",
+    "age": 25,
+    "birth": { "date": "1996-07-12", "place": "Pontoise", "country": "France" },
+    "nationality": "France",
+    "height": "183 cm",
+    "weight": "73 kg",
+    "injured": false,
+    "photo": "https://media.api-sports.io/football/players/666.png"
+  },
+  {
+    "id": 2780,
+    "name": "V. Osimhen",
+    "firstname": "Victor James",
+    "lastname": "Osimhen",
+    "age": 23,
+    "birth": { "date": "1998-12-29", "place": "Lagos", "country": "Nigeria" },
+    "nationality": "Nigeria",
+    "height": "185 cm",
+    "weight": "78 kg",
+    "injured": false,
+    "photo": "https://media.api-sports.io/football/players/2780.png"
+  },
+  {
+    "id": 276,
+    "name": "Neymar",
+    "firstname": "Neymar",
+    "lastname": "da Silva Santos Júnior",
+    "age": 29,
+    "birth": {
+      "date": "1992-02-05",
+      "place": "Mogi das Cruzes",
+      "country": "Brazil"
+    },
+    "nationality": "Brazil",
+    "height": "175 cm",
+    "weight": "68 kg",
+    "injured": false,
+    "photo": "https://media.api-sports.io/football/players/276.png"
+  },
+  {
+    "id": 216,
+    "name": "M. Icardi",
+    "firstname": "Mauro Emanuel",
+    "lastname": "Icardi Rivero",
+    "age": 28,
+    "birth": {
+      "date": "1993-02-19",
+      "place": "Rosario",
+      "country": "Argentina"
+    },
+    "nationality": "Argentina",
+    "height": "181 cm",
+    "weight": "75 kg",
+    "injured": false,
+    "photo": "https://media.api-sports.io/football/players/216.png"
+  },
+  {
+    "id": 20535,
+    "name": "H. Diallo",
+    "firstname": "Habibou Mouhamadou",
+    "lastname": "Diallo",
+    "age": 26,
+    "birth": { "date": "1995-06-18", "place": "Thies", "country": "Senegal" },
+    "nationality": "Senegal",
+    "height": "186 cm",
+    "weight": "79 kg",
+    "injured": false,
+    "photo": "https://media.api-sports.io/football/players/20535.png"
+  },
+  {
+    "id": 550,
+    "name": "K. Dolberg",
+    "firstname": "Kasper",
+    "lastname": "Dolberg",
+    "age": 24,
+    "birth": {
+      "date": "1997-10-06",
+      "place": "Silkeborg",
+      "country": "Denmark"
+    },
+    "nationality": "Denmark",
+    "height": "187 cm",
+    "weight": "83 kg",
+    "injured": false,
+    "photo": "https://media.api-sports.io/football/players/550.png"
+  },
+  {
+    "id": 2478,
+    "name": "D. Benedetto",
+    "firstname": "Darío Ismael",
+    "lastname": "Benedetto",
+    "age": 31,
+    "birth": {
+      "date": "1990-05-17",
+      "place": "Berazategui",
+      "country": "Argentina"
+    },
+    "nationality": "Argentina",
+    "height": "177 cm",
+    "weight": "75 kg",
+    "injured": false,
+    "photo": "https://media.api-sports.io/football/players/2478.png"
+  },
+  {
+    "id": 2216,
+    "name": "M. Niang",
+    "firstname": "M'Baye Babacar",
+    "lastname": "Niang",
+    "age": 27,
+    "birth": {
+      "date": "1994-12-19",
+      "place": "Meulan-en-Yvelines",
+      "country": "France"
+    },
+    "nationality": "Senegal",
+    "height": "184 cm",
+    "weight": "75 kg",
+    "injured": false,
+    "photo": "https://media.api-sports.io/football/players/2216.png"
+  },
+  {
+    "id": 21437,
+    "name": "D. Bouanga",
+    "firstname": "Denis",
+    "lastname": "Bouanga",
+    "age": 27,
+    "birth": { "date": "1994-11-11", "place": "Le Mans", "country": "France" },
+    "nationality": "Gabon",
+    "height": "175 cm",
+    "weight": "70 kg",
+    "injured": false,
+    "photo": "https://media.api-sports.io/football/players/21437.png"
+  },
+  {
+    "id": 21591,
+    "name": "A. Delort",
+    "firstname": "Andy",
+    "lastname": "Delort",
+    "age": 30,
+    "birth": { "date": "1991-10-09", "place": "Sete", "country": "France" },
+    "nationality": "Algeria",
+    "height": "182 cm",
+    "weight": "82 kg",
+    "injured": false,
+    "photo": "https://media.api-sports.io/football/players/21591.png"
+  },
+  {
+    "id": 1374,
+    "name": "I. Slimani",
+    "firstname": "Islam",
+    "lastname": "Slimani",
+    "age": 33,
+    "birth": { "date": "1988-06-18", "place": "Alger", "country": "Algeria" },
+    "nationality": "Algeria",
+    "height": "188 cm",
+    "weight": "83 kg",
+    "injured": false,
+    "photo": "https://media.api-sports.io/football/players/1374.png"
+  },
+  {
+    "id": 667,
+    "name": "M. Depay",
+    "firstname": "Memphis",
+    "lastname": "Depay",
+    "age": 27,
+    "birth": {
+      "date": "1994-02-13",
+      "place": "Moordrecht",
+      "country": "Netherlands"
+    },
+    "nationality": "Netherlands",
+    "height": "176 cm",
+    "weight": "78 kg",
+    "injured": false,
+    "photo": "https://media.api-sports.io/football/players/667.png"
+  },
+  {
+    "id": 21393,
+    "name": "S. Guirassy",
+    "firstname": "Serhou Yadaly",
+    "lastname": "Guirassy",
+    "age": 25,
+    "birth": { "date": "1996-03-12", "place": "Arles", "country": "France" },
+    "nationality": "France",
+    "height": "187 cm",
+    "weight": "82 kg",
+    "injured": false,
+    "photo": "https://media.api-sports.io/football/players/21393.png"
+  },
+  {
+    "id": 1912,
+    "name": "D. Payet",
+    "firstname": "Dimitri",
+    "lastname": "Payet",
+    "age": 34,
+    "birth": {
+      "date": "1987-03-29",
+      "place": "Saint-Pierre",
+      "country": "Réunion"
+    },
+    "nationality": "France",
+    "height": "175 cm",
+    "weight": "77 kg",
+    "injured": false,
+    "photo": "https://media.api-sports.io/football/players/1912.png"
+  },
+  {
+    "id": 22261,
+    "name": "A. Thomasson",
+    "firstname": "Adrien",
+    "lastname": "Thomasson",
+    "age": 28,
+    "birth": {
+      "date": "1993-12-10",
+      "place": "Bourg-Saint-Maurice",
+      "country": "France"
+    },
+    "nationality": "France",
+    "height": "177 cm",
+    "weight": "72 kg",
+    "injured": false,
+    "photo": "https://media.api-sports.io/football/players/22261.png"
+  },
+  {
+    "id": 2210,
+    "name": "A. Hunou",
+    "firstname": "Adrien",
+    "lastname": "Hunou",
+    "age": 27,
+    "birth": { "date": "1994-01-19", "place": "Evry", "country": "France" },
+    "nationality": "France",
+    "height": "176 cm",
+    "weight": "66 kg",
+    "injured": false,
+    "photo": "https://media.api-sports.io/football/players/2210.png"
+  },
+  {
+    "id": 266,
+    "name": "Á. Di María",
+    "firstname": "Ángel Fabián",
+    "lastname": "Di María Hernández",
+    "age": 33,
+    "birth": {
+      "date": "1988-02-14",
+      "place": "Rosario",
+      "country": "Argentina"
+    },
+    "nationality": "Argentina",
+    "height": "180 cm",
+    "weight": "75 kg",
+    "injured": false,
+    "photo": "https://media.api-sports.io/football/players/266.png"
+  },
+  {
+    "id": 22264,
+    "name": "L. Ajorque",
+    "firstname": "Ludovic",
+    "lastname": "Ajorque",
+    "age": 27,
+    "birth": {
+      "date": "1994-02-25",
+      "place": "Saint-Denis",
+      "country": "Réunion"
+    },
+    "nationality": "France",
+    "height": "197 cm",
+    "weight": "82 kg",
+    "injured": false,
+    "photo": "https://media.api-sports.io/football/players/22264.png"
+  }
+]
