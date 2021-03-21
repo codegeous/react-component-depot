@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "components/Header";
 import playersJSON from "resources/data/players.json";
 import { useDrag, useDrop } from "react-dnd";
+import ExternalInfo from "components/ExternalInfo";
 
 const TeamSelection = () => {
   const [players, setPlayers] = useState(() => playersJSON);
@@ -40,6 +41,8 @@ const TeamSelection = () => {
   return (
     <>
       <Header title="Team Selection (Drag And Drop)" />
+
+      <ExternalInfo page="dnd" />
 
       <div className="row">
         <div className="col text-center">

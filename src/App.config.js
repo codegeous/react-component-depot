@@ -134,6 +134,10 @@ export default {
       tutorial: `${YOUTUBE_BASE}MLYH-o_EdaI`,
       code: `${GIT_REPO}pages/SimpleTabs/index.js`,
     },
+    dnd: {
+      tutorial: `${YOUTUBE_BASE}O2dTW3uNAeQ`,
+      code: `${GIT_REPO}pages/TeamSelection/index.js`,
+    },
   },
   youtubeVideos: [
     {
