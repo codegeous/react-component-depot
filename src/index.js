@@ -12,9 +12,10 @@ import * as serviceWorker from "./serviceWorker";
 //Sentry error tracking
 import * as Sentry from "@sentry/react";
 import { Integrations } from "@sentry/tracing";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
 
-if (process.env.NODE_ENV) {
+if (process.env.NODE_ENV === "production") {
   Sentry.init({
     dsn:
       "https://6d740d803d2a4a07a51cfbaaa93e3d3a@o456774.ingest.sentry.io/5571933",
@@ -32,7 +33,9 @@ let store = createStoreWithMiddleware(reducers);
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <DndProvider backend={HTML5Backend}>
+      <App />
+    </DndProvider>
   </Provider>,
   document.getElementById("root")
 );

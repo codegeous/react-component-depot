@@ -29,6 +29,7 @@ const FileDownloader = React.lazy(() => import("pages/FileDownloader"));
 const TreeList = React.lazy(() => import("pages/TreeList"));
 const Rating = React.lazy(() => import("pages/Rating"));
 const SimpleTabs = React.lazy(() => import("pages/SimpleTabs"));
+const TeamSelection = React.lazy(() => import("pages/TeamSelection"));
 
 const routes = [
   {
@@ -199,6 +200,13 @@ const routes = [
     path: "/tree-structure",
     component: TreeList,
     navbar: "Tree List",
+    child: null,
+  },
+  {
+    enabled: true,
+    path: "/team-selection",
+    component: TeamSelection,
+    navbar: "Tree Selection (DND)",
     child: null,
   },
   {
