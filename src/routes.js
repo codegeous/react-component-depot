@@ -1,3 +1,4 @@
+import SearchFilterDebounced from "pages/SearchFilterDebounced";
 import React from "react";
 
 const GoogleMaps = React.lazy(() => import("pages/GoogleMaps"));
@@ -257,6 +258,13 @@ const routes = [
     path: "/simple-tabs",
     component: SimpleTabs,
     navbar: "Simple Tabs",
+    child: null,
+  },
+  {
+    enabled: true,
+    path: "/search-debounced",
+    component: SearchFilterDebounced,
+    navbar: "Debounced Search",
     child: null,
   },
   {
