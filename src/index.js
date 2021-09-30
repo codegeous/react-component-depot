@@ -14,6 +14,13 @@ import * as Sentry from "@sentry/react";
 import { Integrations } from "@sentry/tracing";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
+import TagManager from 'react-gtm-module'
+ 
+const tagManagerArgs = {
+    gtmId: 'GTM-N34MGJK'
+}
+ 
+TagManager.initialize(tagManagerArgs)
 
 if (process.env.NODE_ENV === "production") {
   Sentry.init({
