@@ -30,6 +30,13 @@ const TreeList = React.lazy(() => import("pages/TreeList"));
 const Rating = React.lazy(() => import("pages/Rating"));
 const SimpleTabs = React.lazy(() => import("pages/SimpleTabs"));
 const TeamSelection = React.lazy(() => import("pages/TeamSelection"));
+const SearchFilterDebounced = React.lazy(() =>
+  import("pages/SearchFilterDebounced")
+);
+const CancelableFetchRequest = React.lazy(() =>
+  import("pages/CancelableFetchRequest")
+);
+const UserListTable = React.lazy(() => import("pages/UserListTable"));
 
 const routes = [
   {
@@ -257,6 +264,27 @@ const routes = [
     path: "/simple-tabs",
     component: SimpleTabs,
     navbar: "Simple Tabs",
+    child: null,
+  },
+  {
+    enabled: true,
+    path: "/search-debounced",
+    component: SearchFilterDebounced,
+    navbar: "Debounced Search",
+    child: null,
+  },
+  {
+    enabled: true,
+    path: "/cancelable-fetch-request",
+    component: CancelableFetchRequest,
+    navbar: "Cancelable Fetch Request",
+    child: null,
+  },
+  {
+    enabled: true,
+    path: "/user-list-table",
+    component: UserListTable,
+    navbar: "User List Table",
     child: null,
   },
   {

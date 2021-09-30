@@ -23,7 +23,7 @@ const AddContact = ({ onClose }) => {
             <Modal.Header closeButton>
                 <Modal.Title>New Contact</Modal.Title>
             </Modal.Header>
-            <Modal.Body>
+            <Modal.Body id="add-contact-modal">
                 <form>
                     <div className="form-group">
                         <label>Name</label>
