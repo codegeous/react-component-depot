@@ -90,12 +90,13 @@ const ButtonLoadingSpinner = () => {
           window.dataLayer.push(function(){
             this.reset();
           });
-        } 
+        },
+        eventTimeout: 2000
       });
-      window.dataLayer.push(function(){
+      /* window.dataLayer.push(function(){
         console.log("RESET CALLBACK TRIGGERED")
         this.reset();
-      });
+      }); */
     }
   }
 
