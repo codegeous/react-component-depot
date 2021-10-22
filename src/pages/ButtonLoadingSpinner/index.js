@@ -85,13 +85,17 @@ const ButtonLoadingSpinner = () => {
         page: 'Button Loading Reset',
         action: 'click',
         actionLabel: 'Testing GTM With Reset',
-        /* eventCallback: function(){
+        eventCallback: function(){
+          console.log("EVENT CALLBACK TRIGGERED");
           window.dataLayer.push(function(){
             this.reset();
           });
-        } */
+        } 
       });
-      window.dataLayer.reset();
+      window.dataLayer.push(function(){
+        console.log("RESET CALLBACK TRIGGERED")
+        this.reset();
+      });
     }
   }
 
