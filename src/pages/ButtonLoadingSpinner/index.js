@@ -70,8 +70,8 @@ const ButtonLoadingSpinner = () => {
   };
 
   const pushData = () => {
-    if (typeof window !== 'undefined') {
-      window.dataLayer?.push({
+    if (typeof window !== 'undefined' && typeof window.dataLayer !== 'undefined') {
+      window.dataLayer.push({
         page: 'Button Loading',
         action: 'click',
         actionLabel: 'Testing GTM Without Reset'
@@ -80,14 +80,14 @@ const ButtonLoadingSpinner = () => {
   }
 
   const pushDataWithReset = () => {
-    if (typeof window !== 'undefined') {
-      window.dataLayer?.push({
+    if (typeof window !== 'undefined' && typeof window.dataLayer !== 'undefined') {
+      window.dataLayer.push({
         page: 'Button Loading Reset',
         action: 'click',
         actionLabel: 'Testing GTM With Reset',
 
         eventCallback: function(){
-          window.dataLayer?.push(function(){
+          window.dataLayer.push(function(){
             this.reset();
           });
         }
