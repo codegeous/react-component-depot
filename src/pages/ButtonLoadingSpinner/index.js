@@ -69,6 +69,32 @@ const ButtonLoadingSpinner = () => {
     throw new Error("This is an error from sentry tutorial");
   };
 
+  const pushData = () => {
+    if (typeof window !== 'undefined') {
+      window.dataLayer?.push({
+        page: 'Button Loading',
+        action: 'click',
+        actionLabel: 'Testing GTM Without Reset'
+      });
+    }
+  }
+
+  const pushDataWithReset = () => {
+    if (typeof window !== 'undefined') {
+      window.dataLayer?.push({
+        page: 'Button Loading Reset',
+        action: 'click',
+        actionLabel: 'Testing GTM With Reset',
+
+        eventCallback: function(){
+          window.dataLayer?.push(function(){
+            this.reset();
+          });
+        }
+      })
+    }
+  }
+
   return (
     <>
       <Header title="Loading spinners (Hooks API)" />
@@ -141,6 +167,24 @@ const ButtonLoadingSpinner = () => {
           <p>
             <button className="btn btn-primary mr-2" onClick={throwKnownError}>
               Broken Button
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <div className="row w-100 mt-5">
+        <div className="col text-center">
+          <h2>Google GTM Tracking</h2>
+          <p>
+            
+          </p>
+
+          <p>
+            <button className="btn btn-primary mr-2" onClick={pushData}>
+              Send Data To GTM
+            </button>
+            <button className="btn btn-primary mr-2" onClick={pushDataWithReset}>
+              Send Data To GTM With Reset
             </button>
           </p>
         </div>
