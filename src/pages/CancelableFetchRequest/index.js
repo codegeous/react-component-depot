@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import Header from "components/Header";
+import ExternalInfo from "components/ExternalInfo";
 
 const CancelableFetchRequest = () => {
   const abortController = useRef(null);
@@ -37,6 +38,8 @@ const CancelableFetchRequest = () => {
   return (
     <>
       <Header title="Canelable fetch request (Cancelable File Upload)" />
+      
+      <ExternalInfo page="cancelableFetch" />
 
       <div className="row justify-content-center bg-light">
         <div className="col-md-5 text-center">

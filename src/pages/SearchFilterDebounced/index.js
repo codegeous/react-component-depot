@@ -4,6 +4,7 @@ import CountriesList from "resources/data/countries-list.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMemo } from "react";
 import useDebounce from "hooks/useDebounce";
+import ExternalInfo from "components/ExternalInfo";
 
 const SearchFilterDebounced = () => {
   const [search, setSearch] = useState("");
@@ -26,6 +27,8 @@ const SearchFilterDebounced = () => {
   return (
     <>
       <Header title="Country Search - Debounced" />
+      
+      <ExternalInfo page="debouncedSearch" />
 
       <div className="row justify-content-center mt-4">
         <div className="col-lg-6 text-center">

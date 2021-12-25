@@ -138,6 +138,14 @@ export default {
       tutorial: `${YOUTUBE_BASE}O2dTW3uNAeQ`,
       code: `${GIT_REPO}pages/TeamSelection/index.js`,
     },
+    cancelableFetch: {
+      tutorial: `${YOUTUBE_BASE}jIXfNjXFZN4`,
+      code: `${GIT_REPO}pages/CancelableFetchRequest/index.js`,
+    },
+    debouncedSearch: {
+      tutorial: `${YOUTUBE_BASE}jIXfNjXFZN4`,
+      code: `${GIT_REPO}pages/SearchFilterDebounced/index.js`,
+    }
   },
   youtubeVideos: [
     {
