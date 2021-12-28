@@ -139,7 +139,7 @@ export default {
       code: `${GIT_REPO}pages/TeamSelection/index.js`,
     },
     cancelableFetch: {
-      tutorial: `${YOUTUBE_BASE}jIXfNjXFZN4`,
+      tutorial: `${YOUTUBE_BASE}AwTxrCgIBWk`,
       code: `${GIT_REPO}pages/CancelableFetchRequest/index.js`,
     },
     debouncedSearch: {
