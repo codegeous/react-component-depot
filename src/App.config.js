@@ -143,7 +143,7 @@ export default {
       code: `${GIT_REPO}pages/CancelableFetchRequest/index.js`,
     },
     debouncedSearch: {
-      tutorial: `${YOUTUBE_BASE}jIXfNjXFZN4`,
+      tutorial: `${YOUTUBE_BASE}Wf7INnelvkI`,
       code: `${GIT_REPO}pages/SearchFilterDebounced/index.js`,
     }
   },
