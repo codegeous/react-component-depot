@@ -1,9 +1,12 @@
 import React, { useState, useRef } from "react";
 import Header from "components/Header";
-import axios, { CancelToken, isCancel } from "axios";
+import axios from "axios";
 import { ProgressBar } from "react-bootstrap";
 import ExternalInfo from "components/ExternalInfo";
 import AppConfig from "App.config";
+
+const cancelToken = axios.CancelToken;
+const isCancel = axios.isCancel;
 
 const FileUpload = () => {
     const [uploadPercentage, setUploadPercentage] = useState(0);
